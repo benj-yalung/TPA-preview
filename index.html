@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body class="d-flex flex-column justify-content-between">
+<body class="d-flex flex-column justify-content-between mobile-h">
     
     <header>
         <div id="header">
@@ -60,8 +60,16 @@
                 </nav>
             </div>
         </div>
+
+        <!-- Mobile -->
+
+        <div id="mobile-header">
+            <div class="text-center py-2">
+                <a href="#"><h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png" width="100px" alt="Brand Logo"></h2></a>
+            </div>
+        </div>
     </header>
-    <main class="px-3 px-lg-0">
+    <main id="desktop-login" class="px-3 px-lg-0">
         <section class="login-container py-5">
             <div class="container">
                 <div class="row login-container-row">
@@ -110,7 +118,43 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>        
+    </main>
+
+     <!-- Mobile -->
+
+    <main id="mobile-login">
+            <div class="container h-100 py-3">
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <div class="title-heading">
+                        <h2 class="text-white">Welcome Back!</h2>
+                        <p class="text-white">Please Login To Your Account</p>
+                    </div>
+                    <form action="" method="post" class="login-form">
+                        <div class="form-input-field">
+                            <input type="text" id="input-field" placeholder="Username, Email or Phone Number">
+                        </div>
+                        <div class="form-input-field">
+                            <input type="password" id="input-field" placeholder="Password">
+                        </div>
+                        <div class="form-wrap form-wrap-options flex-row">
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="rememberMe" name="rememberMe" value="true">
+                                <label for="rememberMe" class="text-white">Remember Me</label>
+                            </div>
+                            <div>
+                                <a href="#" class="forgot-btn text-white">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <div class="form-login-btn">
+                            <button class="btn-login">Login</button>
+                        </div>
+                    </form>
+                    <div>
+                        <p class="text-white text-center">Don't have an account? <a href="#" class="text-white"><strong>Sign Up</strong></a></p>
+                    </div>
+                </div>
+            </div>
     </main>
     <footer>
         <div class="footer-container">
