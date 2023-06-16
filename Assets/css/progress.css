@@ -157,8 +157,13 @@ p.incomplete-number{
     color: #fff;
     font-weight: 500;
 }
-
-
+#mobile-header {
+    display: none;
+    background: #0F0345;
+}
+.mobile-wrapper{
+    display: none;
+}
 @media only screen and (max-width: 990px){
     .progress-container .container-wapper{
         flex-direction: column;
@@ -229,6 +234,12 @@ p.incomplete-number{
     .course-grade{
         font-size: 12px;
     }
+    #mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+    }
 }
 
 
@@ -273,5 +284,81 @@ p.incomplete-number{
 
     .progress__col.col3 svg{
         height: 3rem;
+    }
+    .mobile-wrapper{
+        display: block;
+    }
+    .main-wrapper{
+        display: none;
+    }
+    .mobile-wrapper .student__profile{
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .mobile-wrapper .course_info{
+        background-color: #0F0345;
+        width: 45%;
+    }
+    .mobile-wrapper .course_info .info_title{
+       font-size: 10px;
+    }
+    .mobile-wrapper .course_info .info_number{
+        font-size: 15px;
+        font-weight: 700;
+     }
+    .mobile-wrapper .progress__card{
+        height: 15vh;
+        border-radius: 15px;
+        flex-direction: row;
+    }
+    .mobile-wrapper     #myChartNew-mob,
+    #myChartNew2-mob,
+    #myChartNew3-mob{
+        height: 70px !important;
+        width: 70px !important;
+    }
+    .mobile-wrapper .course-info{
+        text-align: start; 
+        row-gap: 10px;
+    }
+    .mobile-wrapper .course-info .course-title{
+        font-size: 10px;
+    }
+    .mobile-wrapper .course-info .course-percentage{
+        font-size: 10px;
+    }
+    .mobile-wrapper .course-progress{
+        width: 100%;
+    }
+    .mobile-wrapper .completion-info{
+        height: 40px; 
+        border-radius: 10px; 
+        width: 80%;
+    }
+    .mobile-wrapper .completion-info p{
+        font-size: 8px;
+    }
+    .mobile-wrapper .find_tutor{
+        border-radius: 10px;
+        height: 10vh;
+        padding-top: 13px;
+        margin-top: 10px;
+    }
+    .mobile-wrapper .find_tutor h2{
+        font-size: 11px;
+        margin: 0;
+    }
+    .mobile-wrapper .find_tutor p{
+        font-size: 11px;
+        text-align: start;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .mobile-wrapper .find_tutor button{
+        width: 80%;
+        font-size: 13px;
+        border-radius: 5px;
+        margin-top: 5px;
     }
 }
