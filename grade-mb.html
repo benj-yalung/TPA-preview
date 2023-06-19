@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dashboard | Talent Pro Academy</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./Assets/img/logo-removebg-preview.png" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="./Assets/css/dashboard.css">
+  <link rel="stylesheet" href="./Assets/css/grade.css">
+</head>
+<div id="mobile-header">
+  <div class="text-center py-2">
+      <a href="#"><h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png" width="100px" height="45px" alt="Brand Logo"></h2></a>
+  </div>
+</div>  
+<body>
+  <div class="layer"></div>
+  <!-- ! Body -->
+  <a class="skip-link sr-only" href="#skip-target">Skip to content</a>
+  <div class="page-flex">
+    <!-- ! Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-start">
+        <div class="sidebar-head">
+          <a href="./index.html" class="logo-wrapper" title="Home">
+            <img src="./Assets/img/logo-removebg-preview.png" alt="Site Logo" width="100">
+          </a>
+        </div>
+        <div class="sidebar-body">
+          <ul class="sidebar-body-menu">
+            <li>
+              <a class="show-cat-btn" href="./dashboard.html">
+                <i class="icon fa fa-th-large" aria-hidden="true"></i>Dashboard
+              </a>
+            </li>
+            <li>
+              <a class="show-cat-btn" href="./course.html">
+                <i class="icon fa fa-file-text" aria-hidden="true"></i>Course
+              </a>
+            </li>
+            <li>
+              <a class="show-cat-btn" href="./progress.html">
+                <i class="icon fa fa-check-circle-o" aria-hidden="true"></i>Progress
+              </a>
+            </li>
+            <li>
+              <a class="show-cat-btn" href="./grade.html">
+                <i class="icon fa fa-graduation-cap" aria-hidden="true"></i>Grade
+              </a>
+            </li>
+            <li>
+              <a class="show-cat-btn active" href="./calendar.html">
+                <i class="icon fa fa-calendar" aria-hidden="true"></i>Calendar
+              </a>
+            </li>
+            <li>
+              <a class="show-cat-btn" href="./chat.html">
+                <i class="icon fa fa-comment" aria-hidden="true"></i>
+                Messages
+              </a>
+              <!-- <span class="msg-counter">7</span> -->
+            </li>
+            <li>
+              <a class="show-cat-btn" href="tutor.html">
+                <i class="icon fa fa-user" aria-hidden="true"></i>
+                Find Tutor
+              </a>
+            </li>
+            <li>
+              <a class="show-cat-btn" href="./help.html">
+                <i class="icon fa fa-question" aria-hidden="true"></i>
+                Help
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+        <ul class="sidebar-body-menu" style="color: white;">
+          <li>
+            <a class="show-cat-btn" href="./settings.html">
+              <i class="icon setting fa fa-wrench" aria-hidden="true"></i>Settings
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <div class="main-wrapper">
+      <nav class="main-nav--bg">
+        <div class="container main-nav">
+          <div class="main-nav-start">
+            <div class="search-wrapper">
+              <input type="text" placeholder="Search" required>
+              <i data-feather="search" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="main-nav-end">
+            <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
+              <span class="sr-only">Toggle menu</span>
+              <span class="icon menu-toggle--gray" aria-hidden="true"></span>
+            </button>
+
+            <div class="notification-wrapper">
+              <button class="gray-circle-btn dropdown-btn" title="To messages" type="button">
+                <span class="sr-only">To messages</span>
+                <span class="icon notification active" aria-hidden="true"></span>
+              </button>
+              <ul class="users-item-dropdown notification-dropdown dropdown">
+                <li>
+                  <a href="##">
+                    <div class="notification-dropdown-icon info">
+                      <i data-feather="check"></i>
+                    </div>
+                    <div class="notification-dropdown-text">
+                      <span class="notification-dropdown__title">System just updated</span>
+                      <span class="notification-dropdown__subtitle">The system has been successfully upgraded. Read more
+                        here.</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="##">
+                    <div class="notification-dropdown-icon danger">
+                      <i data-feather="info" aria-hidden="true"></i>
+                    </div>
+                    <div class="notification-dropdown-text">
+                      <span class="notification-dropdown__title">The cache is full!</span>
+                      <span class="notification-dropdown__subtitle">Unnecessary caches take up a lot of memory space and
+                        interfere ...</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="##">
+                    <div class="notification-dropdown-icon info">
+                      <i data-feather="check" aria-hidden="true"></i>
+                    </div>
+                    <div class="notification-dropdown-text">
+                      <span class="notification-dropdown__title">New Subscriber here!</span>
+                      <span class="notification-dropdown__subtitle">A new subscriber has subscribed.</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="link-to-page" href="##">Go to Notifications page</a>
+                </li>
+              </ul>
+            </div>
+
+            <button class="gray-circle-btn dropdown-btn" type="button" title="Switch theme">
+              <span class="icon message" aria-hidden="true"></span>
+            </button>
+
+            <div class="nav-user-wrapper">
+              <button href="##" class="nav-user-btn dropdown-btn" title="My profile" type="button">
+                <span class="sr-only">My profile</span>
+                <span class="nav-user-img">
+                  <picture>
+                    <source srcset="./Assets/img/profile.png" type="image/webp"><img src="./Assets/img/profile.png"
+                      alt="User name">
+                  </picture>
+                </span>
+              </button>
+              <ul class="users-item-dropdown nav-user-dropdown dropdown">
+                <li><a href="##">
+                    <i data-feather="user" aria-hidden="true"></i>
+                    <span>Profile</span>
+                  </a></li>
+                <li><a href="##">
+                    <i data-feather="settings" aria-hidden="true"></i>
+                    <span>Account settings</span>
+                  </a></li>
+                <li><a class="danger" href="##">
+                    <i data-feather="log-out" aria-hidden="true"></i>
+                    <span>Log out</span>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ! Main -->
+      <main class="main users chart-page" id="skip-target">
+        <div class="container">
+          <h2 class="main-title">My Grades</h2>
+
+          <!-- Accordion -->
+
+          <div class="accordion">
+            <!-- Accordion item -->
+            <div class="accordion-item active">
+              <div class="accordion-header">
+                <a href="##">
+                  <p class="subject_name">English 1</p>
+                </a>
+                <p class="grade_rate">Overall Grade: A</p>
+              </div>
+              <div class="accordion-body">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Assignment 1</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>Writing Essay</td>
+                      <td>Points: 8/10</td>
+                      <td>80%</td>
+                    </tr>
+                    <tr>
+                      <td>Quiz</td>
+                      <td>Points: 7/10</td>
+                      <td>70%</td>
+                    </tr>
+                    <tr>
+                      <td>Exam</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>Homework: Getting Started</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <a href="##">
+                  <p class="subject_name">Remedial English</p>
+                </a>
+                <p class="grade_rate">Overall Grade: A</p>
+              </div>
+              <div class="accordion-body">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Assignment 1</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>Writing Essay</td>
+                      <td>Points: 8/10</td>
+                      <td>80%</td>
+                    </tr>
+                    <tr>
+                      <td>Quiz</td>
+                      <td>Points: 7/10</td>
+                      <td>70%</td>
+                    </tr>
+                    <tr>
+                      <td>Exam</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>Homework: Getting Started</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <a href="##">
+                  <p class="subject_name">World Literature</p>
+                </a>
+                <p class="grade_rate">Overall Grade: A</p>
+              </div>
+              <div class="accordion-body">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Assignment 1</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>Writing Essay</td>
+                      <td>Points: 8/10</td>
+                      <td>80%</td>
+                    </tr>
+                    <tr>
+                      <td>Quiz</td>
+                      <td>Points: 7/10</td>
+                      <td>70%</td>
+                    </tr>
+                    <tr>
+                      <td>Exam</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>Homework: Getting Started</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <a href="##">
+                  <p class="subject_name">Grammer</p>
+                </a>
+                <p class="grade_rate">Overall Grade: A</p>
+              </div>
+              <div class="accordion-body">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Assignment 1</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>Writing Essay</td>
+                      <td>Points: 8/10</td>
+                      <td>80%</td>
+                    </tr>
+                    <tr>
+                      <td>Quiz</td>
+                      <td>Points: 7/10</td>
+                      <td>70%</td>
+                    </tr>
+                    <tr>
+                      <td>Exam</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>Homework: Getting Started</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <a href="##">
+                  <p class="subject_name">Creative Writing</p>
+                </a>
+                <p class="grade_rate">Overall Grade: A</p>
+              </div>
+              <div class="accordion-body">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Assignment 1</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>Writing Essay</td>
+                      <td>Points: 8/10</td>
+                      <td>80%</td>
+                    </tr>
+                    <tr>
+                      <td>Quiz</td>
+                      <td>Points: 7/10</td>
+                      <td>70%</td>
+                    </tr>
+                    <tr>
+                      <td>Exam</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>Homework: Getting Started</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <a href="##">
+                  <p class="subject_name">Composition</p>
+                </a>
+                <p class="grade_rate">Overall Grade: A</p>
+              </div>
+              <div class="accordion-body">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Assignment 1</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>Writing Essay</td>
+                      <td>Points: 8/10</td>
+                      <td>80%</td>
+                    </tr>
+                    <tr>
+                      <td>Quiz</td>
+                      <td>Points: 7/10</td>
+                      <td>70%</td>
+                    </tr>
+                    <tr>
+                      <td>Exam</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>Homework: Getting Started</td>
+                      <td>Points: 10/10</td>
+                      <td>100%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+        <!--MOBILE-->
+        <div class="mobile-wrapper">
+          <!-- ! Main nav -->
+          <?php include './mainnavtemplate.php';?>
+          <!-- ! Main -->
+          <main class="main users chart-page" id="mobile-target">
+              <div class="progress-container">
+                  <div class="container-wapper">
+                      <div class="student__profile">
+                          <div class="col-12">
+                          <div class="row">
+                          <div class="col-4">
+                          <div class="profile__head">
+                              <div class="image_col">
+                                  <img src="./Assets/img/profile.png" alt="profile" width="100" height="100">
+                              </div>
+                          </div>
+                          </div>
+                          <div class="col-8 mob-info">
+                              <div class="student_info_col">
+                                  <h3 class="student_name" style="color: black; text-align: left;">Natisha Wolf</h3>
+                                  <p class="profile_role" style="color: black; text-align: left;">Student</p>
+                              </div>
+                          <div class="profile__body">
+                              <div class="course_info">
+                                  <p class="info_number">19</p>
+                                  <p class="info_title">Enrolled Courses</p>
+                              </div>
+                              <div class="course_info">
+                                  <p class="info_number">28</p>
+                                  <p class="info_title">Completed Courses</p>
+                              </div>
+                              <div class="course_info">
+                                  <p class="info_number">2</p>
+                                  <p class="info_title">Career Programs</p>
+                              </div>
+                              <div class="course_info">
+                                  <p class="info_number">154</p>
+                                  <p class="info_title">Hours Learned</p>
+                              </div>
+                          </div>
+                          </div>  
+                      </div>
+                          </div>
+                          </div>
+                            <div class="container">
+                              <h2 class="main-title">My Grades</h2>
+                    
+                              <!-- Accordion -->
+                    
+                              <div class="accordion">
+                                <!-- Accordion item -->
+                                <div class="accordion-item active">
+                                  <div class="accordion-header" style="background-color: #f4f4f4;">
+                                    <a href="##">
+                                      <p class="subject_name">English 1</p>
+                                    </a>
+                                    <p class="grade_rate">Overall Grade: A</p>
+                                  </div>
+                                  <div class="accordion-body">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <td>Assignment 1</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Writing Essay</td>
+                                          <td>Points: 8/10</td>
+                                          <td>80%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Quiz</td>
+                                          <td>Points: 7/10</td>
+                                          <td>70%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Exam</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Homework: Getting Started</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <div class="accordion-header">
+                                    <a href="##">
+                                      <p class="subject_name">Remedial English</p>
+                                    </a>
+                                    <p class="grade_rate">Overall Grade: A</p>
+                                  </div>
+                                  <div class="accordion-body">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <td>Assignment 1</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Writing Essay</td>
+                                          <td>Points: 8/10</td>
+                                          <td>80%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Quiz</td>
+                                          <td>Points: 7/10</td>
+                                          <td>70%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Exam</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Homework: Getting Started</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <div class="accordion-header" style="background-color: #f4f4f4;">
+                                    <a href="##">
+                                      <p class="subject_name">World Literature</p>
+                                    </a>
+                                    <p class="grade_rate">Overall Grade: A</p>
+                                  </div>
+                                  <div class="accordion-body">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <td>Assignment 1</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Writing Essay</td>
+                                          <td>Points: 8/10</td>
+                                          <td>80%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Quiz</td>
+                                          <td>Points: 7/10</td>
+                                          <td>70%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Exam</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Homework: Getting Started</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <div class="accordion-header">
+                                    <a href="##">
+                                      <p class="subject_name">Grammer</p>
+                                    </a>
+                                    <p class="grade_rate">Overall Grade: A</p>
+                                  </div>
+                                  <div class="accordion-body">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <td>Assignment 1</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Writing Essay</td>
+                                          <td>Points: 8/10</td>
+                                          <td>80%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Quiz</td>
+                                          <td>Points: 7/10</td>
+                                          <td>70%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Exam</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Homework: Getting Started</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <div class="accordion-header" style="background-color: #f4f4f4;">
+                                    <a href="##">
+                                      <p class="subject_name">Creative Writing</p>
+                                    </a>
+                                    <p class="grade_rate">Overall Grade: A</p>
+                                  </div>
+                                  <div class="accordion-body">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <td>Assignment 1</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Writing Essay</td>
+                                          <td>Points: 8/10</td>
+                                          <td>80%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Quiz</td>
+                                          <td>Points: 7/10</td>
+                                          <td>70%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Exam</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Homework: Getting Started</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <div class="accordion-header">
+                                    <a href="##">
+                                      <p class="subject_name">Composition</p>
+                                    </a>
+                                    <p class="grade_rate">Overall Grade: A</p>
+                                  </div>
+                                  <div class="accordion-body">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <td>Assignment 1</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Writing Essay</td>
+                                          <td>Points: 8/10</td>
+                                          <td>80%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Quiz</td>
+                                          <td>Points: 7/10</td>
+                                          <td>70%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Exam</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Homework: Getting Started</td>
+                                          <td>Points: 10/10</td>
+                                          <td>100%</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                    
+                            </div>
+
+
+                      <!-- Right side profile info -->
+                      <div class="col-profile" style="height: 5vh;">
+                          <div class="find_tutor">
+                          <div class="col-12">
+                              <div class="row">
+                              <div class="col-7">
+                              <h2>FIND A TUTOR</h2>
+                              <p>Choose the tutor you want with the right qualifications and hourly rate.</p>
+                              </div>
+                              <div class="col-5" style="text-align: center;">
+                              <a href="##">
+                                  <button>Get Started</button>
+                              </a>
+                          </div>
+                          </div>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </main>
+      </div>
+      <!--END OF MOBILE-->
+      <!-- ! Footer -->
+      <!-- <footer class="footer">
+  <div class="container footer--flex">
+    <div class="footer-start">
+      <p>2021 © Elegant Dashboard - <a href="elegant-dashboard.com" target="_blank"
+          rel="noopener noreferrer">elegant-dashboard.com</a></p>
+    </div>
+    <ul class="footer-end">
+      <li><a href="##">About</a></li>
+      <li><a href="##">Support</a></li>
+      <li><a href="##">Puchase</a></li>
+    </ul>
+  </div>
+</footer> -->
+    </div>
+  </div>
+
+  <!-- Icons library -->
+  <script src="plugins/feather.min.js"></script>
+
+  <!-- Custom scripts -->
+  <script src="./Assets/js/dashboard.js"></script>
+
+  <script>
+    const accSingleTriggers = document.querySelectorAll(".accordion-header");
+
+    accSingleTriggers.forEach((trigger) =>
+      trigger.addEventListener("click", toggleAccordion)
+    );
+
+    function toggleAccordion() {
+      const items = document.querySelectorAll(".accordion-item");
+      const thisItem = this.parentNode;
+
+      items.forEach((item) => {
+        if (thisItem == item) {
+          thisItem.classList.toggle("active");
+          return;
+        }
+        item.classList.remove("active");
+      });
+    }
+  </script>
+
+</body>
+
+</html>
