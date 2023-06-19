@@ -303,7 +303,12 @@
 .fa-thumbs-up{
     cursor: pointer;
 }
-
+.mobile-wrapper{
+    display: none;
+}
+#mobile-header{
+    display: none;
+}
 @media only screen and (max-width: 990px){
     .message-wrapper{
         display: flex;
@@ -378,5 +383,46 @@
     
     .msg-profile-settings{
         top: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .main-wrapper{
+        display: none;
+    }
+    .mobile-wrapper{
+        display: block;
+        width: 100%;
+    }
+    .message-wrapper{
+        display: none;
+    }
+    .inbox-wrapper{
+        width: 100%;
+    }
+    .mobile-wrapper .inbox-tabs-menu{
+        background-color: #fff;
+    }
+    .inbox-wrapper {
+        background-color: #fff;
+    }
+    .inbox-msgNew-item, .inbox-msg-item {
+        margin-top: 1;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    .inbox-msgNew-item-info{
+        display: block;
+    }
+    #mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+    background: #0F0345;
+
     }
 }
