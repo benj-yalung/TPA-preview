@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dashboard | Talent Pro Academy</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./Assets/img/logo-removebg-preview.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="./Assets/css/dashboard.css">
+  <link rel="stylesheet" href="./Assets/css/diagnostic.css">
+  <link rel="stylesheet" href="./Assets/css/single-course.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+<div id="mobile-header">
+  <div class="text-center py-2">
+      <a href="#"><h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png" width="100px" height="45px" alt="Brand Logo"></h2></a>
+  </div>
+</div>
+<body>
+  <div class="layer"></div>
+  <!-- ! Body -->
+  <a class="skip-link sr-only" href="#skip-target">Skip to content</a>
+  <div class="page-flex">
+    <!-- ! Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-start">
+        <div class="sidebar-head">
+          <a href="./index.html" class="logo-wrapper" title="Home">
+            <img src="./Assets/img/logo-removebg-preview.png" alt="Site Logo" width="100">
+          </a>
+        </div>
+        <div class="sidebar-body">
+          <ul class="sidebar-body-menu">
+            <li>
+              <a class="show-cat-btn" href="./dashboard.html">
+                <i class="icon fa fa-th-large" aria-hidden="true"></i>Dashboard
+              </a>
+            </li>
+            <li>
+              <a class="show-cat-btn" href="./course.html">
+                <i class="icon fa fa-file-text" aria-hidden="true"></i>Course
+              </a>
+            </li>
+            <li>
+              <a class="show-cat-btn" href="./progress.html">
+                <i class="icon fa fa-check-circle-o" aria-hidden="true"></i>Progress
+              </a>
+            </li>
+            <li>
+              <a class="show-cat-btn" href="./grade.html">
+                <i class="icon fa fa-graduation-cap" aria-hidden="true"></i>Grade
+              </a>
+            </li>
+            <li>
+              <a class="show-cat-btn active" href="./calendar.html">
+                <i class="icon fa fa-calendar" aria-hidden="true"></i>Calendar
+              </a>
+            </li>
+            <li>
+              <a class="show-cat-btn" href="./chat.html">
+                <i class="icon fa fa-comment" aria-hidden="true"></i>
+                Messages
+              </a>
+              <!-- <span class="msg-counter">7</span> -->
+            </li>
+            <li>
+              <a class="show-cat-btn" href="tutor.html">
+                <i class="icon fa fa-user" aria-hidden="true"></i>
+                Find Tutor
+              </a>
+            </li>
+            <li>
+              <a class="show-cat-btn" href="./help.html">
+                <i class="icon fa fa-question" aria-hidden="true"></i>
+                Help
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+        <ul class="sidebar-body-menu" style="color: white;">
+          <li>
+            <a class="show-cat-btn" href="./settings.html">
+              <i class="icon setting fa fa-wrench" aria-hidden="true"></i>Settings
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <div class="main-wrapper">
+      <nav class="main-nav--bg">
+        <div class="container main-nav">
+          <div class="main-nav-start">
+            <div class="search-wrapper">
+              <input type="text" placeholder="Search" required>
+              <i data-feather="search" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="main-nav-end">
+            <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
+              <span class="sr-only">Toggle menu</span>
+              <span class="icon menu-toggle--gray" aria-hidden="true"></span>
+            </button>
+
+            <div class="notification-wrapper">
+              <button class="gray-circle-btn dropdown-btn" title="To messages" type="button">
+                <span class="sr-only">To messages</span>
+                <span class="icon notification active" aria-hidden="true"></span>
+              </button>
+              <ul class="users-item-dropdown notification-dropdown dropdown">
+                <li>
+                  <a href="##">
+                    <div class="notification-dropdown-icon info">
+                      <i data-feather="check"></i>
+                    </div>
+                    <div class="notification-dropdown-text">
+                      <span class="notification-dropdown__title">System just updated</span>
+                      <span class="notification-dropdown__subtitle">The system has been successfully upgraded. Read more
+                        here.</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="##">
+                    <div class="notification-dropdown-icon danger">
+                      <i data-feather="info" aria-hidden="true"></i>
+                    </div>
+                    <div class="notification-dropdown-text">
+                      <span class="notification-dropdown__title">The cache is full!</span>
+                      <span class="notification-dropdown__subtitle">Unnecessary caches take up a lot of memory space and
+                        interfere ...</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="##">
+                    <div class="notification-dropdown-icon info">
+                      <i data-feather="check" aria-hidden="true"></i>
+                    </div>
+                    <div class="notification-dropdown-text">
+                      <span class="notification-dropdown__title">New Subscriber here!</span>
+                      <span class="notification-dropdown__subtitle">A new subscriber has subscribed.</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="link-to-page" href="##">Go to Notifications page</a>
+                </li>
+              </ul>
+            </div>
+
+            <button class="gray-circle-btn dropdown-btn" type="button" title="Switch theme">
+              <span class="icon message" aria-hidden="true"></span>
+            </button>
+
+            <div class="nav-user-wrapper">
+              <button href="##" class="nav-user-btn dropdown-btn" title="My profile" type="button">
+                <span class="sr-only">My profile</span>
+                <span class="nav-user-img">
+                  <picture>
+                    <source srcset="./Assets/img/profile.png" type="image/webp"><img src="./Assets/img/profile.png"
+                      alt="User name">
+                  </picture>
+                </span>
+              </button>
+              <ul class="users-item-dropdown nav-user-dropdown dropdown">
+                <li><a href="##">
+                    <i data-feather="user" aria-hidden="true"></i>
+                    <span>Profile</span>
+                  </a></li>
+                <li><a href="##">
+                    <i data-feather="settings" aria-hidden="true"></i>
+                    <span>Account settings</span>
+                  </a></li>
+                <li><a class="danger" href="##">
+                    <i data-feather="log-out" aria-hidden="true"></i>
+                    <span>Log out</span>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ! Main -->
+      <main>
+        <div class="single_course_wrapper">
+            <div class="container">
+                <div class="diagnostic-header">
+                    <h1>Diagnostic Exam</h1>
+                </div>
+                <div class="question-container">
+                <div class="question-info">
+                    <ul>
+                        <li>
+                            <p class="title">01. Listen to the following word. Which syllable is stressed? (1 Point)</p>
+                            <input type="radio" id="age1" name="age" value="30">
+                            <label for="age1">Answer 1</label><br>
+                            <input type="radio" id="age2" name="age" value="60">
+                            <label for="age2">Answer 2</label><br>  
+                            <input type="radio" id="age3" name="age" value="100">
+                            <label for="age3">Answer 3</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question-info">
+                    <ul>
+                        <li>
+                            <p class="title">02. Which statement is correct about SPEED, Volume, and BODY LANGUAGE? (1 Point)</p>
+                            <input type="radio" id="age1" name="age" value="30">
+                            <label for="age1">Don't pause or stop until the end of a sentence.</label><br>
+                            <input type="radio" id="age2" name="age" value="60">
+                            <label for="age2">Always speak at the same volume.</label><br>  
+                            <input type="radio" id="age3" name="age" value="100">
+                            <label for="age3">Speak slowly to help your listeners understand you.</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question-info">
+                    <ul>
+                        <li>
+                            <p class="title">02. Which statement is correct about SPEED, Volume, and BODY LANGUAGE? (1 Point)</p>
+                            <input type="radio" id="age1" name="age" value="30">
+                            <label for="age1">Don't pause or stop until the end of a sentence.</label><br>
+                            <input type="radio" id="age2" name="age" value="60">
+                            <label for="age2">Always speak at the same volume.</label><br>  
+                            <input type="radio" id="age3" name="age" value="100">
+                            <label for="age3">Speak slowly to help your listeners understand you.</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question-info">
+                    <ul>
+                        <li>
+                            <p class="title">02. Which statement is correct about SPEED, Volume, and BODY LANGUAGE? (1 Point)</p>
+                            <input type="radio" id="age1" name="age" value="30">
+                            <label for="age1">Don't pause or stop until the end of a sentence.</label><br>
+                            <input type="radio" id="age2" name="age" value="60">
+                            <label for="age2">Always speak at the same volume.</label><br>  
+                            <input type="radio" id="age3" name="age" value="100">
+                            <label for="age3">Speak slowly to help your listeners understand you.</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+      </main>
+      <!-- ! Footer -->
+      <!-- <footer class="footer">
+  <div class="container footer--flex">
+    <div class="footer-start">
+      <p>2021 © Elegant Dashboard - <a href="elegant-dashboard.com" target="_blank"
+          rel="noopener noreferrer">elegant-dashboard.com</a></p>
+    </div>
+    <ul class="footer-end">
+      <li><a href="##">About</a></li>
+      <li><a href="##">Support</a></li>
+      <li><a href="##">Puchase</a></li>
+    </ul>
+  </div>
+</footer> -->
+    </div>
+  </div>
+
+  <!-- Icons library -->
+  <script src="plugins/feather.min.js"></script>
+
+  <!-- Chart JS library -->
+  <script src="plugins/chart.min.js"></script>
+
+  <!-- Custom scripts -->
+  <script src="./Assets/js/dashboard.js"></script>
+
+  <script>
+    $('.tab_button').click(function () {
+      let tabName = $(this).data("tab");
+      $('.tab_button').each(function (index) {
+        $(this).removeClass("active");
+      });
+      $(this).addClass("active");
+
+      $(".tab_content").each(function (index) {
+        $(this).css("display", "none")
+      })
+
+      let tabContent = $(".tab_content")[tabName - 1];
+      $(tabContent).css("display", "block")
+    });
+
+    var ctx = document.getElementById('myChartNew').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+          data: [79, 21],
+          backgroundColor: [
+            'rgba(40, 237, 252)',
+            'rgba(113, 142, 212)'
+          ],
+          borderWidth: 0,
+          height: 150,
+          width: 150
+        }]
+      }
+    });
+    var ctx = document.getElementById('myChartNew1').getContext('2d');
+    var myChart1 = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+          data: [79, 21],
+          backgroundColor: [
+            'rgba(40, 237, 252)',
+            'rgba(113, 142, 212)'
+          ],
+          borderWidth: 0,
+          height: 150,
+          width: 150
+        }]
+      }
+    });
+
+    const scheduleConversational = document.querySelectorAll('.scheduleConversational-list-item');
+
+    for (let button of scheduleConversational) {
+      button.addEventListener('click', function () {
+        for (let btn of scheduleConversational) {
+          btn.classList.remove('active');
+        }
+        this.classList.add('active');
+      });
+    }
+
+
+    // FIND COURSES MODAL
+    $('.exam-modal-trigger').on('click', function (e) {
+      e.preventDefault();
+      $('.examModal').toggleClass('is-visible');
+    });
+
+
+    jQuery(function ($) {
+      $('.js-accordion-title').on('click', function () {
+
+        $(this).next().slideToggle(200);
+
+        $(this).toggleClass('open', 200);
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>
