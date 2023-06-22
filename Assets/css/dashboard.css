@@ -2928,7 +2928,9 @@ label {
 }
 
 /** Dashboad Responsive **/
-
+.mobilever{
+    display: none;
+}
 @media only screen and (max-width: 600px){
 	.progress-container .progress-items {
         display: flex;
@@ -2953,4 +2955,180 @@ label {
         gap: 20px;
         text-align: center;
     }
+}
+@media only screen and (max-width: 480px){
+    #skip-target{
+        display: none;
+    }
+    .infobar {
+        display: none !important;
+    }
+    .mobilever{
+        display: block;
+    }
+    .infobar-mid{
+        display: block !important;
+    }
+    .course_info{
+        margin: auto;
+        background-color: #0f0345;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 11px;    
+        
+        width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    margin-top: 10px;
+    }
+    .course_info .info_number{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .student__profile{
+        padding:16px
+    }
+    .profile__head{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .profile__body{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #mobile-target .progress-container .progress-items{
+        flex-direction: row !important;
+        display: flex;
+        height: 13vh;
+        border-radius: 15px;
+    }
+    #mobile-target .course-title {
+        font-size: 14px;
+        text-decoration: none;
+        text-align: start;
+    }
+
+    #mobile-target .course-percentage, .course-grade {
+        font-size: 16px !important;
+        text-align: start;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    #mobile-target .progress-container {
+        padding: 1rem 1.5rem;
+        background: #F7F9FA;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+    }
+   #mobile-target .progress__card {
+    background-color: #92ADEF;
+    padding: 2rem 0.5rem;
+    color: white;
+    }
+    #mobile-target .infobar-mid {
+        display: block !important;
+        padding: 0px 24px;
+    }
+    #mobile-target .tutor-item {
+        flex-direction: row;
+        gap: 0rem;
+
+    }
+    #mobile-target .enrolled-course-container {
+        margin-top: 5px;
+        background: #F7F9FA;
+        padding: 1rem 0rem;
+    }
+    #mobile-target .subject-text h3{
+        font-size: 14px !important;
+        font-weight: bold;
+        border-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    #mobile-target .subject-text{
+        font-size: 12px !important;
+        border-bottom: 0px;
+        flex-direction: column;
+        padding-bottom: 0px;
+        gap: 0px;
+    }
+    #mobile-target .tutor-item .subject-text p {
+        font-size: 10px !important;
+    }
+    #mobile-target .completed-assignment h3, .overall-grade h3, .completed-assignment span {
+        font-size: 8px !important; 
+    }
+    #mobile-target .completed-assignment, .overall-grade {
+        width: 15%;
+        font-size: 8px !important;
+        padding: 10px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    #mobile-target .overall-grade{
+        width: 15%;
+        font-size: 8px !important;
+        padding: 10px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    #mobile-target .see-course-btn {
+        display: grid;
+        place-items: center;
+        width: auto;
+    height: 30px;
+    }
+    #mobile-target .main-title {
+        padding-left: 16px;
+    }
+    #mobile-target .see-course-btn  {
+       background-color: #9f4bf8;
+       border-radius: 15px;
+    }
+    .main-nav{
+        display: none;
+    }
+    #mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+    background: #0F0345;
+    }
+    #mobile-target .tutor-ad.tutor__ad--items {
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+        justify-content: flex-start;
+        border-radius: 0px;
+        background-color: #9f4bf8;
+    }
+    #mobile-target .tutor-ad h2 {
+        font-size: 12px;
+    }
+    #mobile-target .enroll-now-btn {
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        height: 20px;
+        align-content: center;
+        font-weight: bold;
+        width: 65%;
+        background-color: #fff;
+        color: #000;
+        display: grid;
+        font-size: 11px;
+        place-items: center;
+    }
+}
+#mobile-header{
+    display: none;
 }

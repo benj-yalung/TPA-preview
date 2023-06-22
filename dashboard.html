@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./Assets/css/dashboard.css">
   <link rel="stylesheet" href="./Assets/css/dashboard-tab.css">
   <script src="./Assets/js/calendar.js" defer></script>
+  <script src="./Assets/js/calendar1.js" defer></script>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
@@ -26,7 +27,11 @@
   <!-- JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
-
+<div id="mobile-header">
+  <div class="text-center py-2">
+      <a href="#"><h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png" width="100px" height="45px" alt="Brand Logo"></h2></a>
+  </div>
+</div>
 <body class="page-dashboard">
   <div class="layer"></div>
   <!-- ! Body -->
@@ -350,7 +355,6 @@
           </div>
         </div>
       </div>
-
       <div class="infobar-end">
         <div class="wrapper">
           <div class="schedule-heading">
@@ -373,6 +377,187 @@
     </aside>
   </div>
 
+  <!--MOBILE-->
+  <main class="main users chart-page" id="mobile-target">
+  <div class="mobilever">
+        <div class="student__profile">
+          <div class="col-12">
+          <div class="row">
+          <div class="col-4">
+          <div class="profile__head">
+              <div class="image_col">
+                  <img src="./Assets/img/profile.png" alt="profile" width="100" height="100">
+              </div>
+          </div>
+          </div>
+          <div class="col-8 mob-info">
+              <div class="student_info_col">
+                  <h3 class="student_name" style="color: black; text-align: left;">Natisha Wolf</h3>
+                  <p class="profile_role" style="color: black; text-align: left;">Student</p>
+              </div>
+          <div class="row profile__body">
+              <div class="col-4 course_info">
+                  <p class="info_number">19</p>
+                  <p class="info_title">Enrolled Courses</p>
+              </div>
+              <div class="col-4 course_info">
+                  <p class="info_number">28</p>
+                  <p class="info_title">Completed Courses</p>
+              </div>
+          </div>
+          </div>  
+      </div>
+          </div>
+          </div>
+          <div class="progress-container">
+            <div class="progress__card progress-items">
+              <a href="#"><span id="next" class="material-symbols-rounded">chevron_left</span></a>
+              <div class="col-5 progress__col course-info">
+                <a href="!#" class="course-title">Creative Writing</a>
+                <p class="course-percentage">You are 78% complete!</p>
+                <!-- <p class="course-grade">Overall Grade: C+</p> -->
+              </div>
+              <div class="progress__col course-progress">
+                <div class="parent-chartjs" style="width: 70px; height: 70px; margin-top: -25px;">
+                  <canvas id="myChartNew1"></canvas>
+                </div>
+              </div>
+              <a href="#"><span id="next" class="material-symbols-rounded">chevron_right</span></a>
+              <!-- <div class="progress__col col3">
+                <div class="completion-info">
+                  <p class="incomplete-number">8</p>
+                  <p>Incomplete Assignments</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-chevron-right">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div> -->
+            </div>
+          </div>
+      <div class="infobar-mid">
+        <div class="wrapper infobar-mid__wrapper">
+          <header>
+            <div class="calendars">
+            <p class="">Calendar</p>
+            <p class="" style="margin-top: 10px;">2023</p>
+          </div>
+            <div class="icons">
+              <span id="prev" class="material-symbols-rounded">chevron_left</span>
+              <p class="current-date1" style="margin-top: 10px;"></p>
+              <span id="next" class="material-symbols-rounded">chevron_right</span>
+            </div>
+          </header>
+          <div class="calendar">
+            <ul class="weeks">
+              <li>Sun</li>
+              <li>Mon</li>
+              <li>Tue</li>
+              <li>Wed</li>
+              <li>Thu</li>
+              <li>Fri</li>
+              <li>Sat</li>
+            </ul>
+            <ul class="days1"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="infobar-end">
+        <div class="wrapper">
+          <div class="schedule-heading">
+            <h3>Upcoming Classes</h3>
+          </div>
+          <div class="schedule-item schedule-item-1">
+            <div class="sched-subject">
+              <div class="sched-date">
+                <span>04<span>Mar</span></span>
+              </div>
+              <div class="sched-subject-time">
+                <h3>English</h3>
+                <span>10:00 AM</span>
+              </div>
+            </div>
+            <a href="#"><span id="next" class="material-symbols-rounded">chevron_right</span></a>
+          </div>
+        </div>
+      </div>
+    <div class="enrolled-course-container">
+      <div class="enrolled-course-row">
+        <h2 class="main-title">Enrolled Course</h2>
+        <div class="tutor">
+          <div class="tutor-item">
+            <img src="./Assets/img/profile.png" alt="Subject profile" class="subject-profile" style="width: 60px;">
+            <div class="col-4 subject-text">
+              <h3>English Orientation</h3><br>
+              <p>Start date: 10/02/23</p>
+            </div>
+            <div class="completed-assignment">
+              <h3 class="completed-container">4</h3>
+              <span>Completed Assignments</span>
+            </div>
+            <div class="overall-grade">
+              <h3 class="grade-container">B+</h3>
+              <span>Overall grade</span>
+            </div>
+            <div class="see-course-btn">
+              <a href="#"><span id="next" class="material-symbols-rounded">chevron_right</span></a>
+            </div>
+          </div>
+          <div class="tutor-item">
+            <img src="./Assets/img/profile.png" alt="Subject profile" class="subject-profile" style="width: 60px;">
+            <div class="col-4 subject-text">
+              <h3>English Orientation</h3><br>
+              <p>Start date: <span>10/02/23</span></p>
+            </div>
+            <div class="completed-assignment">
+              <h3 class="completed-container">4</h3>
+              <span>Completed Assignments</span>
+            </div>
+            <div class="overall-grade">
+              <h3 class="grade-container">B+</h3>
+              <span>Overall grade</span>
+            </div>
+            <div class="see-course-btn">
+              <a href="#"><span id="next" class="material-symbols-rounded">chevron_right</span></a>
+            </div>
+          </div>
+          <div class="tutor-item">
+            <img src="./Assets/img/profile.png" alt="Subject profile" class="subject-profile" style="width: 60px;">
+            <div class="col-4 subject-text">
+              <h3>English Orientation</h3><br>
+              <p>Start date: <span>10/02/23</span></p>
+            </div>
+            <div class="completed-assignment">
+              <h3 class="completed-container">4</h3>
+              <span>Completed Assignments</span>
+            </div>
+            <div class="overall-grade">
+              <h3 class="grade-container">B+</h3>
+              <span>Overall grade</span>
+            </div>
+            <div class="see-course-btn">
+              <a href="#"><span id="next" class="material-symbols-rounded">chevron_right</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="tutor-ad tutor__ad--items">
+          <div class="col-6" style="text-align: start; flex-direction: row; display: flex;">
+            <div><a href="#"><span class="material-symbols-outlined"> add_circle </span></a></div>
+            <div style="margin-left: 10px;"><h2>Find more courses to excel your future</h2></div>
+          </div>
+          <div class="col-6" style="text-align: -webkit-center;">
+            <button type="button" class="btn btn-primary enroll-now-btn">ENROLL NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+  <!--END OF MOBILE-->
+
+
   <!-- Icons library -->
   <script src="plugins/feather.min.js"></script>
   <!-- Custom scripts -->
@@ -384,6 +569,7 @@
 
 <script>
   var ctx = document.getElementById('myChartNew').getContext('2d');
+  var ctx2 = document.getElementById('myChartNew1').getContext('2d');
   var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
