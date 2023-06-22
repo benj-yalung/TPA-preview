@@ -19,6 +19,11 @@
 </head>
 
 <body>
+    <div id="mobile-header">
+        <div class="text-center py-2">
+            <a href="#"><h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png" width="100px" height="45px" alt="Brand Logo"></h2></a>
+        </div>
+    </div>
     <div class="layer"></div>
     <!-- ! Body -->
     <a class="skip-link sr-only" href="#skip-target">Skip to content</a>
@@ -229,6 +234,148 @@
   </div>
 </footer> -->
         </div>
+        <!--MOBILE-->
+        <div class="mobile-wrapper">
+            <!-- ! Main nav -->
+            <?php include './mainnavtemplate.php';?>
+            <!-- ! Main -->
+            <main class="main users chart-page" id="skip-target">
+                <div class="progress-container">
+                    <div class="container-wapper">
+                        <div class="student__profile">
+                            <div class="col-12">
+                            <div class="row">
+                            <div class="col-4">
+                            <div class="profile__head">
+                                <div class="image_col">
+                                    <img src="./Assets/img/profile.png" alt="profile" width="100" height="100">
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-8 mob-info">
+                                <div class="student_info_col">
+                                    <h3 class="student_name" style="color: black; text-align: left;">Natisha Wolf</h3>
+                                    <p class="profile_role" style="color: black; text-align: left;">Student</p>
+                                </div>
+                            <div class="profile__body">
+                                <div class="course_info">
+                                    <p class="info_number">19</p>
+                                    <p class="info_title">Enrolled Courses</p>
+                                </div>
+                                <div class="course_info">
+                                    <p class="info_number">28</p>
+                                    <p class="info_title">Completed Courses</p>
+                                </div>
+                                <div class="course_info">
+                                    <p class="info_number">2</p>
+                                    <p class="info_title">Career Programs</p>
+                                </div>
+                                <div class="course_info">
+                                    <p class="info_number">154</p>
+                                    <p class="info_title">Hours Learned</p>
+                                </div>
+                            </div>
+                            </div>  
+                        </div>
+                            </div>
+                            </div>
+                        <div class="col-progress">
+                            <h2 class="main-title">My Progress</h2>
+                            <!-- English Orientation 1 -->
+                            <div class="progress__card">
+                                <div class="progress__col course-info">
+                                    <a href="!#" class="course-title">English Orientation 1</a>
+                                    <p class="course-percentage">You are 78% complete!</p>
+                                    <p class="course-grade">Overall Grade: B-</p>
+                                </div>
+                                <div class="progress__col course-progress">
+                                    <div class="parent-chartjs">
+                                        <canvas id="myChartNew-mob"></canvas>
+                                    </div>
+                                </div>
+                                <div class="progress__col ">
+                                    <div class="completion-info">
+                                        <p class="incomplete-number">3</p>
+                                        <p>Incomplete Assignments</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- Creative Writing -->
+                            <div class="progress__card">
+                                <div class="progress__col course-info">
+                                    <a href="!#" class="course-title">Creative Writing</a>
+                                    <p class="course-percentage">You are 78% complete!</p>
+                                    <p class="course-grade">Overall Grade: C+</p>
+                                </div>
+                                <div class="progress__col course-progress">
+                                    <div class="parent-chartjs">
+                                        <canvas id="myChartNew2-mob"></canvas>
+                                    </div>
+                                </div>
+                                <div class="progress__col">
+                                    <div class="completion-info">
+                                        <p class="incomplete-number">8</p>
+                                        <p>Incomplete Assignments</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- World Literature -->
+                            <div class="progress__card">
+                                <div class="progress__col course-info">
+                                    <a href="!#" class="course-title">World Literature</a>
+                                    <p class="course-percentage">You are 78% complete!</p>
+                                    <p class="course-grade">Overall Grade: A</p>
+                                </div>
+                                <div class="progress__col course-progress">
+                                    <div class="parent-chartjs">
+                                        <canvas id="myChartNew3-mob"></canvas>
+                                    </div>
+                                </div>
+                                <div class="progress__col">
+                                    <div class="completion-info">
+                                        <p class="incomplete-number">2</p>
+                                        <p>Incomplete Assignments</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right side profile info -->
+                        <div class="col-profile" style="height: 5vh;">
+                            <div class="find_tutor">
+                            <div class="col-12">
+                                <div class="row">
+                                <div class="col-7">
+                                <h2>FIND A TUTOR</h2>
+                                <p>Choose the tutor you want with the right qualifications and hourly rate.</p>
+                                </div>
+                                <div class="col-5" style="text-align: center;">
+                                <a href="##">
+                                    <button>Get Started</button>
+                                </a>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
     </div>
 
     <!-- Icons library -->
@@ -245,6 +392,55 @@
     var ctx = document.getElementById('myChartNew').getContext('2d');
     var ctx2 = document.getElementById('myChartNew2').getContext('2d');
     var ctx3 = document.getElementById('myChartNew3').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [79, 21],
+                backgroundColor: [
+                    'rgba(40, 237, 252)',
+                    'rgba(113, 142, 212)'
+                ],
+                borderWidth: 0,
+                height: 150,
+                width: 150
+            }]
+        }
+    });
+    var myChart2 = new Chart(ctx2, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [79, 21],
+                backgroundColor: [
+                    'rgba(40, 237, 252)',
+                    'rgba(113, 142, 212)'
+                ],
+                borderWidth: 0,
+                height: 150,
+                width: 150
+            }]
+        }
+    });
+    var myChart3 = new Chart(ctx3, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [79, 21],
+                backgroundColor: [
+                    'rgba(40, 237, 252)',
+                    'rgba(113, 142, 212)'
+                ],
+                borderWidth: 0,
+                height: 150,
+                width: 150
+            }]
+        }
+    });
+
+    var ctx = document.getElementById('myChartNew-mob').getContext('2d');
+    var ctx2 = document.getElementById('myChartNew2-mob').getContext('2d');
+    var ctx3 = document.getElementById('myChartNew3-mob').getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
