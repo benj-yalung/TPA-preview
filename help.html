@@ -16,7 +16,11 @@
   <link rel="stylesheet" href="./Assets/css/dashboard.css">
   <link rel="stylesheet" href="./Assets/css/help.css">
 </head>
-
+<div id="mobile-header">
+  <div class="text-center py-2">
+      <a href="#"><h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png" width="100px" height="45px" alt="Brand Logo"></h2></a>
+  </div>
+  </div>
 <body>
   <div class="layer"></div>
   <!-- ! Body -->
@@ -324,6 +328,173 @@
           </div>
         </div>
       </main>
+
+      <!--MOBILE-->
+      <main class="main users help-page" id="mobile-target">
+        <div class="help_container">
+          <div class="help_column help_tab">
+            <div class="help_nav_head">
+              <div class="help_nav_head-wrapper">
+                <div class="help_nav_head-col nav-tabs">
+                  <button id="FAQs_Tab" class="btn_tabs tabs_active" onclick="openTab('FAQs')">FAQs</button>
+                  <button id="MyTicket_Tab" class="btn_tabs" onclick="openTab('MyTicket')">My Tickets</button>
+                  <button id="ResolvedTicket_Tab" class="btn_tabs" onclick="openTab('ResolvedTicket')">Resolved
+                    Tickets</button>
+                </div>
+                <div class="help_nav_head-col contact-us">
+                  <button id="Contact_Tab" class="btn_tabs contact-us_btn" onclick="openTab('ContactUs')">Contact
+                    Us</button>
+                </div>
+              </div>
+            </div>
+            <div class="help_nav_content">
+              <div id="FAQs" class="tab_content">
+                <div class="tab_content_header">
+                  <button class="btn_createTicket" >Create Ticket &gt;</button>
+                  <div class="tab_filter">
+                    <button style="background-color: #fff;">
+                      <i data-feather="sliders" aria-hidden="true" style="color: #9f4bf8; background-color: #fff;"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="tab_content_body">
+                  <div class="ticket_card">
+                    <div class="ticket_card_head">
+                      <h3>Ticket #45298</h3>
+                    </div>
+                    <div class="ticket_card_body">
+                      <div class="ticket_name">
+                        <h2>How do I reset my password?</h2>
+                      </div>
+                      <div class="ticket_desc">
+                        <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                          et dolore magna aliqua. ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ticket_card">
+                    <div class="ticket_card_head">
+                      <h3>Ticket #45298</h3>
+                    </div>
+                    <div class="ticket_card_body">
+                      <div class="ticket_name">
+                        <h2>How do I reset my password?</h2>
+                      </div>
+                      <div class="ticket_desc">
+                        <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                          et dolore magna aliqua. ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ticket_card">
+                    <div class="ticket_card_head">
+                      <h3>Ticket #45298</h3>
+                    </div>
+                    <div class="ticket_card_body">
+                      <div class="ticket_name">
+                        <h2>How do I reset my password?</h2>
+                      </div>
+                      <div class="ticket_desc">
+                        <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                          et dolore magna aliqua. ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="MyTicket" class="tab_content" style="display:none">
+                <h2>My Ticket</h2>
+              </div>
+              <div id="ResolvedTicket" class="tab_content" style="display:none">
+                <h2>Resolved Ticket</h2>
+              </div>
+              <div id="ContactUs" class="tab_content" style="display:none">
+                <h2>Contact Us</h2>
+              </div>
+            </div>
+          </div>
+          <div class="help_column help_left-side">
+            <div class="search-question_block" style="display: flex;">
+              <h3>Search for a question</h2>
+                <h4>Type your question or search keyword
+              </h3>
+              <div class="row" style="align-items: center;">
+              <div class="search-wrapper search-help" style="width: 60%; margin-left: 15px;">
+                <input type="text" placeholder="Search question..." required>
+                <i data-feather="search" aria-hidden="true"></i>
+              </div>
+              <div class="getStart" style="background-color: #93aaeb;">              
+                 <a href="##">Getting Started</a>
+              </div>
+            </div>
+            </div>
+            <div class="help_side-nav">
+              <ul>
+                <!-- <li class="help_active">
+                  <a href="##">Getting Started</a>
+                  <i data-feather="chevron-right" aria-hidden="true"></i>
+                </li> -->
+                <div class="row">
+                <div class="col-6">
+                <li class="">
+                  <a href="##">Billing Information &gt;</a>
+                  <i data-feather="chevron-right" aria-hidden="true"></i>
+                </li>
+                <li class="">
+                  <a href="##">How to reset my password? &gt;</a>
+                  <i data-feather="chevron-right" aria-hidden="true"></i>
+                </li>
+                <li class="">
+                  <a href="##">How to enroll in a course? &gt;</a>
+                  <i data-feather="chevron-right" aria-hidden="true"></i>
+                </li>
+                <li class="">
+                  <a href="##">How to cancel a course? &gt;</a>
+                  <i data-feather="chevron-right" aria-hidden="true"></i>
+                </li>
+              </div>
+              <div class="col-6">
+                <li class="">
+                  <a href="##">Where can I find a tutor? &gt;</a>
+                  <i data-feather="chevron-right" aria-hidden="true"></i>
+                </li>
+                <li class="">
+                  <a href="##">How do I create a meeting? &gt;</a>
+                  <i data-feather="chevron-right" aria-hidden="true"></i>
+                </li>
+                <li class="">
+                  <a href="##">Where can I view my grades? &gt;</a>
+                  <i data-feather="chevron-right" aria-hidden="true"></i>
+                </li>
+              </ul>
+              </div>
+              </div>
+            </div>
+            <div class="col-profile" style="height: 5vh; ">
+              <div class="find_tutor">
+              <div class="col-12">
+                  <div class="row">
+                  <div class="col-7">
+                  <h2>FIND A TUTOR</h2>
+                  <p>Choose the tutor you want with the right qualifications and hourly rate.</p>
+                  </div>
+                  <div class="col-5" style="text-align: center;">
+                  <a href="##">
+                      <button>Get Started</button>
+                  </a>
+              </div>
+              </div>
+              </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </main>
+      <!--END OF MOBILE-->
+
     </div>
   </div>
 

@@ -270,7 +270,7 @@
     background-color: #f4f4f4 !important;
     padding: 0.2rem;
     outline: 0;
-    color: #fff
+    color: #fff;
     border: none !important;
     box-shadow: none;
     color: #5b5a5a;
@@ -436,5 +436,26 @@
         border: solid;
         background-color: #f4f4f4;
         border-color: #fff;
+    }
+    #mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: start !important;
+        height: 10vh;
+    background: #0F0345;
+    }
+    .header-div{
+        display: flex;
+    }
+    .back{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0px;
+    }
+    .logo-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
