@@ -247,7 +247,7 @@ p.incomplete-number{
     .progress__card{
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .progress__col.course-info{
@@ -299,6 +299,11 @@ p.incomplete-number{
     .mobile-wrapper .course_info{
         background-color: #0F0345;
         width: 45%;
+        gap: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
     }
     .mobile-wrapper .course_info .info_title{
        font-size: 10px;
@@ -320,13 +325,19 @@ p.incomplete-number{
     }
     .mobile-wrapper .course-info{
         text-align: start; 
-        row-gap: 10px;
+        row-gap: 0px;
     }
     .mobile-wrapper .course-info .course-title{
-        font-size: 10px;
+        font-size: 10px !important;
     }
     .mobile-wrapper .course-info .course-percentage{
-        font-size: 10px;
+        font-size: 10px !important;
+    }
+    #mobile-target .course-percentage, .course-grade {
+        font-size: 12px !important;
+        text-align: start;
+        margin-top: 10px;
+        font-weight: bold;
     }
     .mobile-wrapper .course-progress{
         width: 100%;
@@ -340,10 +351,11 @@ p.incomplete-number{
         font-size: 8px;
     }
     .mobile-wrapper .find_tutor{
-        border-radius: 10px;
+        border-radius: 0px;
         height: 10vh;
         padding-top: 13px;
         margin-top: 10px;
+        background-color: #9f4bf8;
     }
     .mobile-wrapper .find_tutor h2{
         font-size: 11px;
@@ -360,5 +372,8 @@ p.incomplete-number{
         font-size: 13px;
         border-radius: 5px;
         margin-top: 5px;
+        color: #000;
+        font-weight: bold;
+        background-color: #fff;
     }
 }

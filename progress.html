@@ -239,7 +239,7 @@
             <!-- ! Main nav -->
             <?php include './mainnavtemplate.php';?>
             <!-- ! Main -->
-            <main class="main users chart-page" id="skip-target">
+            <main class="main users chart-page" id="mobile-target">
                 <div class="progress-container">
                     <div class="container-wapper">
                         <div class="student__profile">
@@ -293,7 +293,7 @@
                                         <canvas id="myChartNew-mob"></canvas>
                                     </div>
                                 </div>
-                                <div class="progress__col ">
+                                <div class="progress__col " style="display: flex; align-items: center;">
                                     <div class="completion-info">
                                         <p class="incomplete-number">3</p>
                                         <p>Incomplete Assignments</p>
@@ -317,7 +317,7 @@
                                         <canvas id="myChartNew2-mob"></canvas>
                                     </div>
                                 </div>
-                                <div class="progress__col">
+                                <div class="progress__col" style="display: flex; align-items: center;">
                                     <div class="completion-info">
                                         <p class="incomplete-number">8</p>
                                         <p>Incomplete Assignments</p>
@@ -341,7 +341,7 @@
                                         <canvas id="myChartNew3-mob"></canvas>
                                     </div>
                                 </div>
-                                <div class="progress__col">
+                                <div class="progress__col" style="display: flex; align-items: center;">
                                     <div class="completion-info">
                                         <p class="incomplete-number">2</p>
                                         <p>Incomplete Assignments</p>
@@ -355,26 +355,48 @@
                             </div>
                         </div>
                         <!-- Right side profile info -->
-                        <div class="col-profile" style="height: 5vh;">
-                            <div class="find_tutor">
-                            <div class="col-12">
-                                <div class="row">
-                                <div class="col-7">
-                                <h2>FIND A TUTOR</h2>
-                                <p>Choose the tutor you want with the right qualifications and hourly rate.</p>
-                                </div>
-                                <div class="col-5" style="text-align: center;">
-                                <a href="##">
-                                    <button>Get Started</button>
-                                </a>
-                            </div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
                     </div>
                 </div>
+                <div class="col-profile" style="height: 5vh;">
+                    <div class="find_tutor">
+                    <div class="col-12">
+                        <div class="row">
+                        <div class="col-7">
+                        <h2>FIND A TUTOR</h2>
+                        <p>Choose the tutor you want with the right qualifications and hourly rate.</p>
+                        </div>
+                        <div class="col-5" style="text-align: center; min-height: 0px;">
+                        <a href="##">
+                            <button>Get Started</button>
+                        </a>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
             </main>
+            <footer id="footer-container" style="margin-top: 2.7rem;">
+                <div class="col-12 footer-sec">
+                  <div class="row">
+                    <div class="col-3 footer-item">
+                      <i class="icon fa fa-th-large fa-2x" aria-hidden="true"></i>
+                      <a class="show-cat-btn" href="./dashboard.html">Dashboard</a>
+                    </div>
+                    <div class="col-3 footer-item">
+                      <i class="icon fa fa-file-text fa-2x" aria-hidden="true"></i>
+                      <a class="show-cat-btn" href="./course.html">Course</a>
+                    </div>
+                    <div class="col-3 footer-item">
+                      <i class="icon fa fa-check-circle-o fa-2x" aria-hidden="true"></i>
+                      <a class="show-cat-btn" href="./progress.html">Progress</a>
+                    </div>
+                    <div class="col-3 footer-item">
+                      <i class="icon fa fa-comment fa-2x" aria-hidden="true"></i>
+                      <a class="show-cat-btn" href="./chat.html">Messages</a>
+                    </div>
+                  </div>
+                </div>
+            </footer>
         </div>
     </div>
 
