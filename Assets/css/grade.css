@@ -380,20 +380,21 @@ p.incomplete-number{
         display: block;
     }
     .mobile-wrapper .student__profile{
-        background-color: white;
-        margin: 0;
-        padding: 0;
+        background-color: white !important; 
+        margin: 0 !important;
+        padding: 0 !important;
     }
     .mobile-wrapper .course_info{
         background-color: #0F0345;
-        width: 45%;
+        width: 45% !important;
+        display: block;
     }
     .mobile-wrapper .course_info .info_title{
-       font-size: 10px;
+       font-size: 10px !important;
     }
     .mobile-wrapper .course_info .info_number{
-        font-size: 15px;
-        font-weight: 700;
+        font-size: 15px !important;
+        font-weight: 700 !important;
      }
     .mobile-wrapper .progress__card{
         height: 15vh;
@@ -413,6 +414,7 @@ p.incomplete-number{
     .mobile-wrapper .course-info .course-title{
         font-size: 10px;
     }
+
     .mobile-wrapper .course-info .course-percentage{
         font-size: 10px;
     }
@@ -469,5 +471,16 @@ p.incomplete-number{
     .accordion .accordion-item.active {
         box-shadow: 0 0.0625rem 0.9375rem 0 rgba(27, 29, 33, 0.15);
         padding: 0;
+    }
+    #mobile-target .progress-container {
+        padding: 0rem 0rem;
+        background: #fff;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
