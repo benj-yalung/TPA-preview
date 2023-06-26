@@ -1,4 +1,5 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url(../fonts/stylesheet.css);
     html {
     line-height: 1.15;
@@ -3021,7 +3022,7 @@ label {
     }
     #mobile-target .progress-container {
         padding: 1rem 1.5rem;
-        background: #F7F9FA;
+        background: #fff;
         margin-bottom: 5px;
         display: flex;
         justify-content: center;
@@ -3043,7 +3044,7 @@ label {
     #mobile-target .enrolled-course-container {
         margin-top: 5px;
         background: #F7F9FA;
-        padding: 1rem 0rem;
+        padding: 0rem 0rem;
     }
     #mobile-target .subject-text h3{
         font-size: 14px !important;
@@ -3095,9 +3096,9 @@ label {
         display: none;
     }
     #mobile-header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: flex !important;
+            align-items: center;
+            /* justify-content: center; */
         height: 10vh;
     background: #0F0345;
     }
@@ -3128,6 +3129,192 @@ label {
         font-size: 11px;
         place-items: center;
     }
+    #hamburger-menu{
+        display: inline !important;
+    }
+    .burger-prof .student__profile{
+        padding:0px !important;
+    }
+    .wrapper {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0px 0px rgba(0,0,0,0.0) !important;
+    }
+    .main-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.42;
+        margin-bottom: 0px;
+        background-color: #fff;
+    }
+    #footer-container{
+        display: block !important; 
+    }
+}
+
+#hamburger-input{
+    display: none;
+  }
+  
+  #hamburger-menu {
+      position: block;
+      top: 20px;
+      left: 20px;
+      width: 20px;
+      height: 20px;
+      border: none;
+      padding: 0px;
+      margin: 0px;
+      justify-content: center;
+      z-index: 100;
+      font-family: 'Cabin', Sans-serif;
+      background: linear-gradient(
+        to bottom, 
+        white 20%, white 20%, 
+        #3D0E61 20%, #3D0E61 40%,  
+        white 40%, white 60%, 
+        #3D0E61 60%, #3D0E61 80%, 
+        white 80%, white 100%
+      );
+  }
+  
+  #hamburger-menu #sidebar-menu {
+      visibility: hidden;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 350px;
+      height: 90%;
+      margin-top: 10vh;
+      background-color: #fff;
+      transition: 0.3s;
+      padding: 0px 10px;
+      box-sizing: border-box;
+      z-index: 9;
+  }
+  
+  #hamburger-menu h3 {
+    color: #B9FAF8;
+    font-size: 2.2rem;
+  }
+  
+  #hamburger-menu ul {
+    padding-left: 0px;
+  }
+  
+  #hamburger-menu li {
+    list-style-type: none;
+    line-height: 3rem;
+  }
+  
+  #hamburger-menu a {
+    color: #B9FAF8;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+  
+  #hamburger-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  #hamburger-input:checked + #hamburger-menu #sidebar-menu {
+      visibility: visible;
+      left: 0;
+  }
+  #hamburger-input:checked ~ .overlay{
+     visibility: visible;
+    opacity: 0.4;
+  }
+.burger-prof{
+    display: block;
+    text-align: -webkit-center;
+    width: 100%;
+}
+.burger-prof img{
+    width: 13vh;
+    max-width: 500%;
+    height: 13vh;
+}
+#hamburger-menu h3 {
+    color: #B9FAF8;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.burger-prof .img_col{
+    width: 100%;
+}
+.burger-prof .profile__head {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 10px;
+    display: flex;
+    place-content: center;
+    justify-content: center;
+}
+.burger-prof .course-info{
+    display: flex;
+}
+.mob-info{
+    text-align-last: center;
+    row-gap: 20px;
+}
+#mobile-header .burger-button{
+    float: left; 
+    display: flex; 
+    justify-content: center;
+}
+#hamburger-menu .student_info_col h3{
+    color: black; 
+    text-align: left;
+}
+.burger-nav h3{
+    color: #000;
+}
+#hamburger-menu li {
+    list-style-type: none;
+    line-height: 1.8rem;
+}
+#hamburger-menu a {
+    color: #000;
+    font-size: 1rem;
+    display: flex;
+    /* line-height: 1.8rem; */
+    gap: 10px;
+    text-decoration: none;
+}
+.burger-nav{
+    padding:16px; 
+    padding-left: 44px; 
+    padding-top: 0px;
+}
+#hamburger-menu .burger-menu{
+    margin-top: 10px;
+}
+#hamburger-menu i {
+    color: #9f4bf8;
+}
+.fa-2x {
+    color: #9f4bf8;
+    display: block;
+}
+.footer-sec{
+    background-color: #0F0345;
+    padding: 25px; 
+    text-align: center;
+    border-radius: 10px;
+}
+.footer-item{
+    display: flex; 
+    gap: 5px;
+    flex-direction: column;
+}
+.footer-item a{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+#footer-container{
+    display: none;
 }
 #mobile-header{
     display: none;
