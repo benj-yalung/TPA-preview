@@ -324,6 +324,10 @@ background-color: #fff;
     background-color: #fff;
     padding-bottom: 1rem;
   }
+  #mobile-target .main-title {
+    padding-left: 2.5rem;
+    font-size: 20px;
+}
   #mobile-target .find-courses .carousel-heading , .career-development .carousel-heading{
     color: #171717;
     font-size: 20px;
@@ -572,7 +576,7 @@ background-color: #fff;
   #mobile-header {
     display: flex !important;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     height: 10vh;
   background: #0F0345;
 }
