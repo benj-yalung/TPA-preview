@@ -18,10 +18,112 @@
   <link rel="stylesheet" href="./Assets/css/grade.css">
 </head>
 <div id="mobile-header">
-  <div class="text-center py-2">
-      <a href="#"><h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png" width="100px" height="45px" alt="Brand Logo"></h2></a>
-  </div>
-</div>  
+  <!--Burger Menu-->
+  <div class="col-3 burger-button">
+  <input type="checkbox" id="hamburger-input" class="burger-shower" />  
+  <label id="hamburger-menu" for="hamburger-input">
+    <nav id="sidebar-menu">
+      <div class="student_profile">
+        <div class="col-12 burger-prof">
+        <div class="col-4" style="display: flex; padding-right: 0px; padding-left: 0px;justify-content: center">
+        <div class="profile__head">
+            <div class="image_col">
+                <img src="./Assets/img/profile.png" alt="profile" width="100" height="100">
+            </div>
+        </div>
+        </div>
+        <div class="col-10 mob-info">
+            <div class="student_info_col">
+                <h3 class="student_name">Natisha Wolf</h3>
+                <p class="profile_role">Student</p>
+            </div>
+            <div class="row profile__bod">
+              <div class="col-5 course_inf" style="flex-direction: column;">
+                  <p class="info_number">19</p>
+                  <p class="info_title">Enrolled Courses</p>
+              </div>
+              <div class="col-5 course_inf">
+                  <p class="info_number">28</p>
+                  <p class="info_title">Completed Courses</p>
+              </div>
+          </div>
+        </div>  
+        </div>
+        </div>
+        <hr style="width: 75%; margin-top: 30px;">
+        <div class="burger-nav">
+          <h3 style="color: #000;">Menu</h3>
+        <ul>
+          <li class="burger-menu">
+            <a class="show-cat-btn" href="./dashboard.html">
+              <i class="icon fa fa-th-large" aria-hidden="true"></i>Dashboard
+            </a>
+          </li>
+          <li class="burger-menu">
+            <a class="show-cat-btn" href="./course.html">
+              <i class="icon fa fa-file-text" aria-hidden="true"></i>Course
+            </a>
+          </li>
+          <li class="burger-menu">
+            <a class="show-cat-btn" href="./progress.html">
+              <i class="icon fa fa-check-circle-o" aria-hidden="true"></i>Progress
+            </a>
+          </li>
+          <li class="burger-menu">
+            <a class="show-cat-btn" href="./grade.html">
+              <i class="icon fa fa-graduation-cap" aria-hidden="true"></i>Grade
+            </a>
+          </li>
+          <li class="burger-menu">
+            <a class="show-cat-btn active" href="./calendar.html">
+              <i class="icon fa fa-calendar" aria-hidden="true"></i>Calendar
+            </a>
+          </li>
+          <li class="burger-menu">
+            <a class="show-cat-btn" href="./chat.html">
+              <i class="icon fa fa-comment" aria-hidden="true"></i>
+              Messages
+            </a>
+            <!-- <span class="msg-counter">7</span> -->
+          </li>
+          <li class="burger-menu">
+            <a class="show-cat-btn" href="tutor.html">
+              <i class="icon fa fa-user" aria-hidden="true"></i>
+              Find Tutor
+            </a>
+          </li>
+          <li class="burger-menu">
+            <a class="show-cat-btn" href="./help.html">
+              <i class="icon fa fa-question" aria-hidden="true"></i>
+              Help
+            </a>
+          </li>
+        </ul>
+        </div>
+        <hr style="width: 75%;">
+        <div class="burger-nav">
+          <h3 style="color: #000;">Account</h3>
+          <ul>
+            <li class="burger-menu">
+              <a class="show-cat-btn" href="./settings.html">
+                <i class="icon setting fa fa-wrench" aria-hidden="true"></i>Settings
+              </a>
+            </li>
+            <li class="burger-menu">
+              <a class="show-cat-btn" href="./settings.html" style="margin-left: 35px;">
+               Log Out
+              </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </label>
+</div>
+  <!--End Of Menu-->
+<div class="col-6 text-center py-2 header-logo" style="display: flex; justify-content: center; ">
+<a href="#"><h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png" width="100px" height="45px" alt="Brand Logo"></h2></a>
+</div>
+</div> 
 <body>
   <div class="layer"></div>
   <!-- ! Body -->
@@ -746,6 +848,28 @@
                       </div>
                   </div>
               </div>
+              <footer id="footer-container" style="margin-top: 6.2rem;">
+                <div class="col-12 footer-sec">
+                  <div class="row">
+                    <div class="col-3 footer-item">
+                      <i class="icon fa fa-th-large fa-2x" aria-hidden="true"></i>
+                      <a class="show-cat-btn" href="./dashboard.html">Dashboard</a>
+                    </div>
+                    <div class="col-3 footer-item">
+                      <i class="icon fa fa-file-text fa-2x" aria-hidden="true"></i>
+                      <a class="show-cat-btn" href="./course.html">Course</a>
+                    </div>
+                    <div class="col-3 footer-item">
+                      <i class="icon fa fa-check-circle-o fa-2x" aria-hidden="true"></i>
+                      <a class="show-cat-btn" href="./progress.html">Progress</a>
+                    </div>
+                    <div class="col-3 footer-item">
+                      <i class="icon fa fa-comment fa-2x" aria-hidden="true"></i>
+                      <a class="show-cat-btn" href="./chat.html">Messages</a>
+                    </div>
+                  </div>
+                </div>
+              </footer>
           </main>
       </div>
       <!--END OF MOBILE-->
