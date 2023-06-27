@@ -444,7 +444,7 @@ button.btn_tabs:focus {
         height: 10%;
     }
     .find_tutor h2{
-        font-size: 11px;
+        font-size: 13px;
         margin: 0;
         color: #fff;
     }
@@ -464,7 +464,7 @@ button.btn_tabs:focus {
         color: #000000;
         height: 30px;
         font-weight: bold;
-        font-size: 10px;
+        font-size: 13px;
     }
     .find_tutor {
         width: 100%;
@@ -483,7 +483,7 @@ button.btn_tabs:focus {
     #mobile-header {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content:start;
         height: 10vh;
     background: #0F0345;
     }
