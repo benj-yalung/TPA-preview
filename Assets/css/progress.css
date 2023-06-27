@@ -376,4 +376,44 @@ p.incomplete-number{
         font-weight: bold;
         background-color: #fff;
     }
+    #mobile-header .profile__body {
+        text-align: center;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    #mobile-header .course_inf{
+            margin: auto;
+            background-color: #0f0345;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 11px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 10px 20px;
+            margin-top: 10px;
+    }
+    #mobile-header .profile_role{
+        font-size: 16px;
+        color: #000;
+    }
+    #mobile-header .info_number {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #mobile-header .info_title {
+        font-size: 11px;
+    }
+        #mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 10vh;
+    }
 }
