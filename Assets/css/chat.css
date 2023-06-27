@@ -420,7 +420,7 @@
     #mobile-header {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         height: 10vh;
     background: #0F0345;
 
