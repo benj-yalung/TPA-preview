@@ -235,7 +235,7 @@ p.incomplete-number{
     padding: 5px 15px;
     border-radius: 10px;
     color: #000000;
-    height: 30px;
+    /* height: 30px; */
     font-weight: 500;
     font-size: 10px;
 }
@@ -430,7 +430,7 @@ p.incomplete-number{
         font-size: 8px;
     }
     .mobile-wrapper .find_tutor{
-        border-radius: 10px;
+        border-radius: 0px;
         height: 10vh;
         padding-top: 13px;
         margin-top: 10vh;
@@ -447,9 +447,10 @@ p.incomplete-number{
     }
     .mobile-wrapper .find_tutor button{
         width: 80%;
-        font-size: 10px;
+        font-size: 13px;
         border-radius: 5px;
         margin-top: 5px;
+        font-weight: bold;
     }
     .subject_name{
         text-decoration: underline;
@@ -479,8 +480,39 @@ p.incomplete-number{
         display: flex;
         justify-content: center;
     }
+    #mobile-header .course_inf{
+        margin: auto;
+        background-color: #0f0345;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 11px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        margin-top: 10px;
+}
+#mobile-header .profile_role{
+    font-size: 16px;
+    color: #000;
+}
+#mobile-header .info_number {
+    font-size: 16px;
+    font-weight: bold;
+}
+#mobile-header .info_title {
+    font-size: 11px;
+}
     .container{
         padding-left: 0px;
         padding-right: 0px;
+    }
+    #mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 10vh;
     }
 }
