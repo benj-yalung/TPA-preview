@@ -499,4 +499,22 @@ button.btn_tabs:focus {
         border-bottom: 0;
         color: #9f4bf8;
     }
+    #mobile-header .course_inf{
+        margin: auto;
+        background-color: #0f0345;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 11px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+    .course_inf .info_number {
+        font-size: 16px;
+        font-weight: bold;
+    }
 }
