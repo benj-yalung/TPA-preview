@@ -438,10 +438,12 @@ button.btn_tabs:focus {
     .help_left-side, .help_nav_content {
         height: 30%;
         justify-content: space-around;
+        background-color: #fff;
     }
     .help_nav_head {
         padding: 1rem;
         height: 10%;
+        background-color: #fff;
     }
     .find_tutor h2{
         font-size: 13px;
@@ -516,5 +518,8 @@ button.btn_tabs:focus {
     .course_inf .info_number {
         font-size: 16px;
         font-weight: bold;
+    }
+    .search-wrapper.search-help input{
+        height: 30px;
     }
 }
