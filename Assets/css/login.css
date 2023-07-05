@@ -272,8 +272,10 @@ p.box-sub-heading {
 
 #mobile-login .title-heading h2 {
     text-align: left;
-    font-size: 60px;
+    font-size: 4rem;
     line-height: 1em;
+    letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
 }
 
 #mobile-login p {
@@ -335,6 +337,7 @@ p.box-sub-heading {
     
     #mobile-login {
         display: block;
+        padding: 40px
     }
 
     #mobile-login ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -408,7 +411,7 @@ p.box-sub-heading {
     }
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 480px){
 
     .banner-box h2:nth-child(1){
         font-size: 12px;
@@ -433,5 +436,18 @@ p.box-sub-heading {
 
     .btn-login{
         padding: 10px 42px;
+    }
+    #mobile-login {
+        display: block;
+        padding: 40px;
+        padding-top: 100px !important;
+    }
+    #mobile-login .title-heading h2 {
+        text-align: left;
+        font-size: 4rem;
+        line-height: 1em;
+    }
+    .existing-acc{
+        padding-top: 3rem;
     }
 }
