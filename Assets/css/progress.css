@@ -304,6 +304,7 @@ p.incomplete-number{
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
+        padding:0px
     }
     .mobile-wrapper .course_info .info_title{
        font-size: 10px;
@@ -415,5 +416,9 @@ p.incomplete-number{
         align-items: center;
         justify-content: start;
         height: 10vh;
+    }
+    #mobile-target .profile__body {
+        gap: 0px;
+        padding: 0px 0px;
     }
 }
