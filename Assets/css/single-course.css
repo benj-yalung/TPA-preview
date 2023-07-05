@@ -963,18 +963,19 @@
     }
     .examModal__title {
         font-size: 18px;
-        color: #5b5a5a;
+        color: #000;
         margin-left: 30px;
     }
     .examModal .modal-content p {
-        line-height: 300%;
+        line-height: 150%;
         font-size: 12px;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         margin-left: 30px;
+        color: #000;
     }
     .examModalStartBtn {
-        margin-top: 0rem;
+        margin-top: 1rem;
         padding: 0.5rem;
         background-color: #718ED4;
         color: #fff;
@@ -1033,6 +1034,16 @@
     }
     .single-course ul li .active {
         color: #28EDFC !important;
+    }
+    .accordion-content__title img {
+        width: 40px;
+        display: none;
+    }
+    .accordion-content__title span {
+        margin-left: 0;
+    }
+    .accordion-content-item span {
+        font-size: 10px;
     }
 }
 #single-course-mobile{
