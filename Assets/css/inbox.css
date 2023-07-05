@@ -175,7 +175,12 @@
     justify-content: center;
     margin-left: 1rem;
 }
-
+.msg-profile-info__text h3{
+    font-weight: 800;
+}
+.msg-profile-info__text h5{
+    font-weight: 400;
+}
 .msg-sched-call{
     display: grid;
     place-items: center;
