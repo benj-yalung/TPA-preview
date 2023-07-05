@@ -408,7 +408,8 @@ background-color: #fff;
     border-radius: 5%;
     background-color: #fff;
     padding: 3px 20px;
-    height: 40px;
+    min-height: 30px;
+    height: 30px;
     border: 1px solid #9f4bf8 !important;
     border-width: 1;
   }
@@ -583,6 +584,10 @@ background-color: #fff;
 .course-page .main-start {
   padding-top: 0rem;
   padding-bottom: 2rem;
+}
+#mobile-target .carousel-header input {
+  width: 300px;
+  min-height: 30px;
 }
 } 
 
