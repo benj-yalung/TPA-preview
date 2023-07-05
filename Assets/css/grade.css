@@ -409,7 +409,26 @@ p.incomplete-number{
     }
     .mobile-wrapper .course-info{
         text-align: start; 
-        row-gap: 10px;
+        row-gap: 0px;
+    }
+    #mobile-target .course_info{
+        background-color: #0F0345;
+        width: 45%;
+        gap: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding:0px
+    }
+    #mobile-target .profile__body {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        flex-wrap: wrap;
+        padding: 0px 0px;
     }
     .mobile-wrapper .course-info .course-title{
         font-size: 10px;
@@ -514,5 +533,14 @@ p.incomplete-number{
         align-items: center;
         justify-content: start;
         height: 10vh;
+    }
+    #mobile-target .subject_name {
+        text-decoration: none;
+        font-size: 14px;
+    }
+    #mobile-target .accordion-body table td {
+        width: 33.33%;
+        padding: 7.5px 0px 7.5px 7.5%;
+        font-size: 12px;
     }
 }
