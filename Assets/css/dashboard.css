@@ -2961,6 +2961,9 @@ label {
     #skip-target{
         display: none;
     }
+    .student_info_col{
+        text-align: start;
+    }
     .infobar {
         display: none !important;
     }
@@ -3142,13 +3145,69 @@ label {
     }
     .main-title {
         font-weight: 700;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 1.42;
         margin-bottom: 0px;
         background-color: #fff;
     }
     #footer-container{
         display: block !important; 
+    }
+    .infobar-mid .calendar li {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .calendar .days1 li{
+      font-weight: 200;
+    }
+    .infobar-end{
+        padding: 0px 24px;
+    }
+    .schedule-heading{
+        display: flex;
+        align-items: center;
+    }
+    #mobile-target .sched-subject {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-direction: column;
+    }
+    #mobile-target .schedule-item {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0rem 0 !important;
+        border-radius: 15px;
+        height: 80px;
+        background-color: unset !important;
+        padding: 0 0rem;
+        margin:auto
+    }
+    #mobile-target .sched-subject-time span {
+        font-size: 12px;
+        color: #000;
+    }
+    #mobile-target .sched-subject-time h3 {
+        font-size: 1rem;
+        color: #000;
+        text-decoration: underline;
+    }
+    #mobile-target .sched-date {
+        border-radius: 10px;
+        background-color: #0f0345;
+        padding: 0.5rem;
+        margin:auto;
+        text-align: center;
+        width: 80%;
+    }
+    #mobile-target .tutor-item, .tutor-ad {
+        margin-bottom: 0rem;
+    }
+    #mobile-target .tutor-item{
+       border-radius: 0px;
     }
 }
 
