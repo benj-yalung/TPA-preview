@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./Assets/css/dashboard-tab.css">
   <script src="./Assets/js/calendar.js" defer></script>
   <script src="./Assets/js/calendar1.js" defer></script>
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
 
@@ -30,6 +30,7 @@
 <div id="mobile-header">
           <!--Burger Menu-->
           <div class="col-3 burger-button">
+            <div class="back"> 
           <input type="checkbox" id="hamburger-input" class="burger-shower" />  
           <label id="hamburger-menu" for="hamburger-input">
             <nav id="sidebar-menu">
@@ -128,6 +129,7 @@
                 </div>
             </nav>
           </label>
+        </div>
         </div>
           <!--End Of Menu-->
   <div class="col-6 text-center py-2 header-logo" style="display: flex; justify-content: center; ">
@@ -545,12 +547,12 @@
         <div class="wrapper infobar-mid__wrapper">
           <header>
             <div class="calendars">
-            <p class="">Calendar</p>
+            <p class="" style="font-weight: bold;">Calendar</p>
           <p class="fa fa-calendar" style="margin-top: 10px;">  2023</p>
           </div>
             <div class="icons">
               <span id="prev" class="material-symbols-rounded">chevron_left</span>
-              <p class="current-date1" style="margin-top: 10px;"></p>
+              <p class="current-date1" style="margin-top: 10px; margin-left: 20px; margin-right: 20px;"></p>
               <span id="next" class="material-symbols-rounded">chevron_right</span>
             </div>
           </header>
@@ -570,9 +572,9 @@
       </div>
 
       <div class="infobar-end">
-        <div class="wrapper row ">
+        <div class="wrapper row " >
           <div class="col-4 schedule-heading ">
-            <h3>Upcoming Classes</h3>
+            <h3 style="font-size: 16px; font-weight: 800; margin-left: 5px;">Upcoming Classes</h3>
           </div>
           <div class="col-8 schedule-item schedule-item-1">
             <div class="sched-subject">
@@ -602,17 +604,17 @@
                 <span>10:00 AM</span>
               </div>
             </div>
-            <a href="#"><span id="next" class="material-symbols-rounded" style="color:black">chevron_right</span></a>
+            <a href="#"><span id="next" class="material-symbols-rounded" style="color:white; background-color:#9f4bf8; border-radius: 20px; margin-right: 10px;">chevron_right</span></a>
           </div>
         </div>
       </div>
     <div class="enrolled-course-container">
       <div class="enrolled-course-row">
-        <h2 class="main-title">Enrolled Course</h2>
+        <h2 class="main-title" style="padding-left: 24px; padding-top: 16px; padding-bottom: 16px;">Enrolled Course</h2>
         <div class="tutor">
           <div class="tutor-item">
             <img src="./Assets/img/profile.png" alt="Subject profile" class="subject-profile" style="width: 60px;">
-            <div class="col-4 subject-text">
+            <div class="col-5 subject-text" style=" padding-left: 3px;">
               <h3>English Orientation</h3><br>
               <p>Start date: 10/02/23</p>
             </div>
@@ -620,7 +622,7 @@
               <h3 class="completed-container">4</h3>
               <span>Completed Assignments</span>
             </div>
-            <div class="overall-grade">
+            <div class="completed-assignment">
               <h3 class="grade-container">B+</h3>
               <span>Overall grade</span>
             </div>
@@ -630,7 +632,7 @@
           </div>
           <div class="tutor-item">
             <img src="./Assets/img/profile.png" alt="Subject profile" class="subject-profile" style="width: 60px;">
-            <div class="col-4 subject-text">
+            <div class="col-5 subject-text" style=" padding-left: 3px;">
               <h3>English Orientation</h3><br>
               <p>Start date: <span>10/02/23</span></p>
             </div>
@@ -638,7 +640,7 @@
               <h3 class="completed-container">4</h3>
               <span>Completed Assignments</span>
             </div>
-            <div class="overall-grade">
+            <div class="completed-assignment">
               <h3 class="grade-container">B+</h3>
               <span>Overall grade</span>
             </div>
@@ -648,7 +650,7 @@
           </div>
           <div class="tutor-item">
             <img src="./Assets/img/profile.png" alt="Subject profile" class="subject-profile" style="width: 60px;">
-            <div class="col-4 subject-text">
+            <div class="col-5 subject-text" style=" padding-left: 3px;">
               <h3>English Orientation</h3><br>
               <p>Start date: <span>10/02/23</span></p>
             </div>
@@ -656,21 +658,21 @@
               <h3 class="completed-container">4</h3>
               <span>Completed Assignments</span>
             </div>
-            <div class="overall-grade">
+            <div class="completed-assignment">
               <h3 class="grade-container">B+</h3>
               <span>Overall grade</span>
             </div>
             <div class="see-course-btn">
-              <a href="#"><span id="next" class="material-symbols-rounded">chevron_right</span></a>
+              <a href="#"><span id="next" class="material-symbols-rounded" style="font-weight: 200;">chevron_right</span></a>
             </div>
           </div>
         </div>
         <div class="tutor-ad tutor__ad--items">
-          <div class="col-6" style="text-align: start; flex-direction: row; display: flex;">
-            <div><a href="#"><span class="material-symbols-outlined"> add_circle </span></a></div>
+          <div class="col-7" style="text-align: start; flex-direction: row; display: flex; align-items: center;">
+            <div><a href="#"><span class="material-symbols-outlined" style="font-size: 40px; display: flex;"> add_circle </span></a></div>
             <div style="margin-left: 10px;"><h2>Find more courses to excel your future</h2></div>
           </div>
-          <div class="col-6" style="text-align: -webkit-center;">
+          <div class="col-5" style="text-align: -webkit-center;">
             <button type="button" class="btn btn-primary enroll-now-btn">ENROLL NOW</button>
           </div>
         </div>
@@ -740,8 +742,8 @@
           'rgba(255, 255, 255)'
         ],
         borderWidth: 0,
-        height: 150,
-        width: 150
+        height: 10,
+        width: 10
       }]
     }
   });
@@ -761,5 +763,13 @@
     }
   });
 </script>
-
+<style>
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  </style>
 </html>

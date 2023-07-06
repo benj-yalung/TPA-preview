@@ -77,7 +77,7 @@ const renderCalendar1 = () => {
     let liTag = "";
 
     for (let i = firstDayofMonth; i > 0; i--) { // creating li of previous month last days
-        liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
+        liTag += `<li class="inactive" style="color:#92ADEF">${lastDateofLastMonth - i + 1}</li>`;
     }
 
     for (let i = 1; i <= lastDateofMonth; i++) { // creating li of all days of current month
@@ -87,10 +87,10 @@ const renderCalendar1 = () => {
         liTag += `<li class="${isToday}">${i}</li>`;
     }
 
-    for (let i = lastDayofMonth; i < 6; i++) { // creating li of next month first days
-        liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`
-    }
-    currentDate1.innerText = `${months1[currMonth1]} ${currYear1}`; // passing current mon and yr as currentDate text
+    // for (let i = lastDayofMonth; i < 6; i++) { // creating li of next month first days
+    //     liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`
+    // }
+    currentDate1.innerText = `${months1[currMonth1]}`; // passing current mon and yr as currentDate text
     daysTag1.innerHTML = liTag;
 }
 renderCalendar1();

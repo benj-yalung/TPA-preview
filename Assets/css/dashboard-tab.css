@@ -341,7 +341,7 @@ padding: 1rem;
 margin-bottom: 1rem;
 color: #fff;
 border-radius: 20px;
-background: #fff;
+background: #F7F9FA;
  
 }
 .tutor-ad.tutor__ad--items {
@@ -367,8 +367,11 @@ border-bottom: 2px solid #fff;
 }
 
 .tutor-item:hover .see-course-btn{
-background-color: #fff;
+background-color: #fff !important;
 color: #000;
+}
+.tutor-item:hover .completed-assignment, .overall-grade{
+  background-color: #93aaeb;
 }
 
 .tutor-item:hover .subject-text p{

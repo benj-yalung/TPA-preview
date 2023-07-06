@@ -2936,7 +2936,7 @@ label {
 	.progress-container .progress-items {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 0px;
     }
     .progress-container .progress-items > .progress__col {
         width: 100%;
@@ -2983,10 +2983,10 @@ label {
         width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 10px 20px;
+    display: flex;
+    padding: 10px 60px;
     margin-top: 10px;
+    flex-direction: column;
     }
     .course_info .info_number{
         font-size: 16px;
@@ -2996,8 +2996,10 @@ label {
         padding:16px
     }
     .profile__head{
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 0px;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
     }
     .profile__body{
         text-align: center;
@@ -3021,7 +3023,7 @@ label {
         font-size: 16px !important;
         text-align: start;
         margin-top: 5px;
-        font-weight: bold;
+        font-weight: 800;
     }
     #mobile-target .progress-container {
         padding: 1rem 1.5rem;
@@ -3099,10 +3101,10 @@ label {
         display: none;
     }
     #mobile-header {
-        display: flex !important;
-            align-items: center;
-            /* justify-content: center; */
-        height: 10vh;
+    display: flex !important;
+    align-items: center;
+        /* justify-content: center; */
+    height: 10vh;
     background: #0F0345;
     }
     #mobile-target .tutor-ad.tutor__ad--items {
@@ -3114,12 +3116,14 @@ label {
         justify-content: flex-start;
         border-radius: 0px;
         background-color: #9f4bf8;
+        padding-bottom: 25px;
     }
     #mobile-target .tutor-ad h2 {
         font-size: 12px;
+        line-height: 17px;
     }
     #mobile-target .enroll-now-btn {
-        border-radius: 10px;
+        border-radius: 5px;
         text-align: center;
         justify-content: center;
         height: 20px;
@@ -3131,6 +3135,9 @@ label {
         display: grid;
         font-size: 11px;
         place-items: center;
+        padding: 0.5rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
     }
     #hamburger-menu{
         display: inline !important;
@@ -3166,6 +3173,7 @@ label {
     .schedule-heading{
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     #mobile-target .sched-subject {
         display: flex;
@@ -3209,6 +3217,35 @@ label {
     #mobile-target .tutor-item{
        border-radius: 0px;
     }
+    .back{
+        display: flex;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+    #mobile-target header .icons {
+        display: flex;
+        margin-top: 25px
+    }
+    #mobile-target .calendar {
+        padding: 20px;
+        padding-top: 0px;
+    }
+    #mobile-target .calendar .weeks li {
+        font-weight: 900;
+        cursor: default;
+    }
+    #mobile-target .infobar-end .wrapper{
+        margin-right: 0px; 
+        margin-left:0px;
+        padding: 0px;
+        padding-top: 30px;
+        padding-bottom: 24px;
+        background-color: #f4f4f4;
+    }
 }
 
 #hamburger-input{
@@ -3229,11 +3266,11 @@ label {
       font-family: 'Cabin', Sans-serif;
       background: linear-gradient(
         to bottom, 
-        white 20%, white 20%, 
-        #3D0E61 20%, #3D0E61 40%,  
-        white 40%, white 60%, 
-        #3D0E61 60%, #3D0E61 80%, 
-        white 80%, white 100%
+        #3D0E61 20%, #3D0E61 20%, 
+        white 20%, white 40%,  
+        #3D0E61 40%, #3D0E61 60%, 
+        white 60%, white 80%, 
+        #3D0E61 80%, #3D0E61 100%
       );
   }
   
@@ -3288,6 +3325,7 @@ label {
     display: block;
     text-align: -webkit-center;
     width: 100%;
+    padding-top: ;
 }
 .burger-prof img{
     width: 13vh;
@@ -3298,6 +3336,7 @@ label {
     color: #B9FAF8;
     font-size: 1.3rem;
     font-weight: bolder;
+    margin-top: 5px;
 }
 .burger-prof .img_col{
     width: 100%;
@@ -3355,12 +3394,14 @@ label {
 .fa-2x {
     color: #9f4bf8;
     display: block;
+    font-size: 1.5em !important;
 }
 .footer-sec{
     background-color: #0F0345;
     padding: 25px; 
     text-align: center;
     border-radius: 10px;
+    margin-top: -10px;
 }
 .footer-item{
     display: flex; 
