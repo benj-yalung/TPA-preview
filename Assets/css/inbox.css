@@ -353,10 +353,15 @@
 
     .msg-box{
         flex-basis: 100%;
-        padding: 1rem;
+        padding: 1.5rem;
         height: 70%;
+        padding-top: 0px;
         box-sizing: border-box;
         background-color: #fff;
+    }
+    ::placeholder{
+        color: #545454 !important;
+        opacity: 1 !important;
     }
     .msg-box-display-bubble.sender .msg-bubble{
         background-color: #93aaeb;
@@ -369,7 +374,8 @@
         padding: 0;
         flex-wrap: wrap;
         gap: 1rem;
-        padding: 1rem;
+        margin-top: -5px;
+        padding: 1.5rem;
         background-color: #f4f4f4;
     }
 
@@ -452,7 +458,7 @@
     .header-div{
         display: flex;
     }
-    .back{
+    .backbut{
         display: flex;
         justify-content: start;
         align-items: center;
