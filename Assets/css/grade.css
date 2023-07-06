@@ -382,7 +382,8 @@ p.incomplete-number{
     .mobile-wrapper .student__profile{
         background-color: white !important; 
         margin: 0 !important;
-        padding: 0 !important;
+        padding: 16px;
+        padding-top: 0px;
     }
     .mobile-wrapper .course_info{
         background-color: #0F0345;
@@ -423,7 +424,7 @@ p.incomplete-number{
     }
     #mobile-target .profile__body {
         display: flex;
-        width: 100%;
+        width: 97%;
         align-items: center;
         justify-content: center;
         gap: 0px;
@@ -453,6 +454,7 @@ p.incomplete-number{
         height: 10vh;
         padding-top: 13px;
         margin-top: 10vh;
+        height: 100px;
     }
     .mobile-wrapper .find_tutor h2{
         font-size: 11px;
@@ -461,6 +463,8 @@ p.incomplete-number{
     .mobile-wrapper .find_tutor p{
         font-size: 11px;
         text-align: start;
+        font-weight: 300;
+        line-height: 15px;
         width: 100%;
         margin-top: 5px;
     }
@@ -537,10 +541,46 @@ p.incomplete-number{
     #mobile-target .subject_name {
         text-decoration: none;
         font-size: 14px;
+        font-weight: bold;
     }
     #mobile-target .accordion-body table td {
         width: 33.33%;
-        padding: 7.5px 0px 7.5px 7.5%;
+        padding: 7.5px 0px 7.5px 10%;
         font-size: 12px;
+    }
+    #mobile-target .accordion{
+        margin-top: 1rem;
+    }
+    #mobile-target .accordion .accordion-item .accordion-header {
+        padding: 1.5625rem;
+        padding-top: 1rem;
+        padding-bottom: 0.2rem;
+        font-size: 1.125rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        color: black;
+        font-size: 18px;
+    }
+    #mobile-target .accordion .accordion-item .accordion-header::after {
+        content: "\f105";
+        font-size: 1rem;
+        background-color: #9f4bf8;
+        height: 20px;
+        color: #fff;
+        width: 20px;
+        font-family: "FontAwesome";
+        position: absolute;
+        right: 1.5rem;
+        transition: all 0.3s ease-in-out;
+        transform: rotate(0deg);
+        border-radius: 20px;
+        text-align: center;
+    }
+    #mobile-target .accordion .accordion-item.active .accordion-header::after {
+        transform: rotate(90deg);
     }
 }
