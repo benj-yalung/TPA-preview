@@ -11,7 +11,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
-
+  <!-- <script src="https://kit.fontawesome.com/7c91b7c94f.js" crossorigin="anonymous"></script> -->
   <!-- Custom styles -->
   <link rel="stylesheet" href="./Assets/css/dashboard.css">
   <link rel="stylesheet" href="./Assets/css/help.css">
@@ -19,6 +19,7 @@
 <div id="mobile-header">
   <!--Burger Menu-->
   <div class="col-3 burger-button">
+    <div class="back">
   <input type="checkbox" id="hamburger-input" class="burger-shower" />  
   <label id="hamburger-menu" for="hamburger-input">
     <nav id="sidebar-menu">
@@ -117,6 +118,7 @@
         </div>
     </nav>
   </label>
+</div>
 </div>
   <!--End Of Menu-->
 <div class="col-6 text-center py-2 header-logo" style="display: flex; justify-content: center; ">
@@ -453,10 +455,11 @@
             <div class="help_nav_content">
               <div id="FAQs" class="tab_content">
                 <div class="tab_content_header">
-                  <button class="btn_createTicket" >Create Ticket <span style="margin-left: 15px;">&gt;</span></button>
+                  <button class="btn_createTicket" >Create Ticket <i class="fa fa-chevron-right btn-icon" aria-hidden="true"></i></button>
                   <div class="tab_filter">
                     <button style="background-color: #fff;">
-                      <i data-feather="sliders" aria-hidden="true" style="color: #9f4bf8; background-color: #fff;"></i>
+                      <script src="https://kit.fontawesome.com/7c91b7c94f.js" crossorigin="anonymous"></script>
+                      <i class="fa-solid fa-sliders" style="color: #9f4bf8;"></i>
                     </button>
                   </div>
                 </div>
@@ -542,19 +545,19 @@
                 </li> -->
                 <div class="row">
                 <div class="col-6">
-                <li class="">
+                <li class="" style="padding-left: 30px;">
                   <a href="##">Billing Information &gt;</a>
                   <i data-feather="chevron-right" aria-hidden="true"></i>
                 </li>
-                <li class="">
+                <li class="" style="padding-left: 30px;">
                   <a href="##">How to reset my password? &gt;</a>
                   <i data-feather="chevron-right" aria-hidden="true"></i>
                 </li>
-                <li class="">
+                <li class="" style="padding-left: 30px;">
                   <a href="##">How to enroll in a course? &gt;</a>
                   <i data-feather="chevron-right" aria-hidden="true"></i>
                 </li>
-                <li class="">
+                <li class="" style="padding-left: 30px;">
                   <a href="##">How to cancel a course? &gt;</a>
                   <i data-feather="chevron-right" aria-hidden="true"></i>
                 </li>
@@ -596,7 +599,7 @@
           </div>
         </div>
         <footer id="footer-container" style="margin-top: 8.4rem;">
-          <div class="col-12 footer-sec">
+          <div class="col-12 footer-sec" style="margin-top: 0px">
             <div class="row">
               <div class="col-3 footer-item">
                 <i class="icon fa fa-th-large fa-2x" aria-hidden="true"></i>
@@ -628,7 +631,7 @@
 
   <!-- Custom scripts -->
   <script src="./Assets/js/dashboard.js"></script>
-
+  
   <script>
     function openTab(TabName) {
       var i;
