@@ -553,8 +553,8 @@ p.incomplete-number{
     }
     #mobile-target .accordion .accordion-item .accordion-header {
         padding: 1.5625rem;
-        padding-top: 1rem;
-        padding-bottom: 0.2rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
         font-size: 1.125rem;
         font-weight: 500;
         display: flex;
