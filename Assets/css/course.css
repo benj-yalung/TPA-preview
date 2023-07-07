@@ -4,7 +4,9 @@
     background: transparent;
     width: 100%;
   }
-  
+  .main-wrapper{
+    display: block;
+  }
   .carousel-cell {
     width: 25%;
     height: 250px;
@@ -325,9 +327,15 @@ background-color: #fff;
     padding-bottom: 1rem;
   }
   #mobile-target .main-title {
-    padding-left: 2.5rem;
+    padding-left: 1.5rem;
     font-size: 20px;
+    padding-bottom: 1rem;
+    padding-top: 0.2rem;
+    font-weight: 800;
 }
+  #mobile-target .carousel-header{
+    padding-left: 1.5rem;
+  }
   #mobile-target .find-courses .carousel-heading , .career-development .carousel-heading{
     color: #171717;
     font-size: 20px;
@@ -341,9 +349,10 @@ background-color: #fff;
   }
   #mobile-target .tutor-item {
     height: 15vh;
-    margin-right: 10px;
-    background-color: #f4f4f4;
-    margin-bottom: 0.2rem;
+    padding-left: 1.5rem;
+    /* margin-right: 10px; */
+    /* background-color: #f4f4f4; */
+    /* margin-bottom: 0.2rem; */
   }
   #mobile-target .tutor-item img{
     height: 10vh;
@@ -353,6 +362,7 @@ background-color: #fff;
     font-weight: bold;
     border-bottom: 0px;
     padding-bottom: 0px;
+    line-height: 25px;
   }
   #mobile-target .overall-grade {
     width: 17%;
@@ -386,8 +396,10 @@ background-color: #fff;
   }
   #mobile-target .enroll-now-btn {
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 12px;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
   }
   #mobile-target .find-tutor-button{
     padding: 0px;
@@ -426,15 +438,18 @@ background-color: #fff;
   }
   #mobile-target .carousel-cell h3 {
     letter-spacing: 1px;
-    font-size: 10px;
+    font-size: 8.5px;
     color: #171717;
   }
   .carousel-cell-inner {
     grid-gap: 20px;
     background-color: #f4f4f4;
     width: 90%;  
-    height: 100%;
+    height: 90%;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   #mobile-target .flickity-slider {
     position: absolute;
@@ -459,7 +474,7 @@ background-color: #fff;
     transform: translateY(-50%);
   }
   #mobile-target .carousel-cell-inner img{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .main-wrapper {
     display: none;
