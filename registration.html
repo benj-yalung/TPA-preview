@@ -16,6 +16,7 @@
     <!-- BOOTSTRAP CSS/JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="d-flex flex-column justify-content-between registration-page">
@@ -78,45 +79,41 @@
                     </div>
                     <div class="form-body">
                         <div class="reg-module">
-                            <div class="reg-teacher" id="teacher-radio">
+                            <div class="reg-teacher" id="teacher-radio" style="width: 30%;">
+            
                                 <div class="option-reg">
                                     <label for="teacher-radio-input" class="radio-label">
-
                                         <div class="   option-img-desc">
                                             <img class="teacher_module_img" src="./Assets/img/teacher-module.png" alt="teacher">
-
-                                            <span class="reg-teacher-title">Teacher</span>
+                                            <!--<span class="reg-teacher-title">Teacher</span>-->
                                         </div>
                                         <div class="radio-status-display">
                                             <!-- <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"> -->
-                                            <input type="radio" class=" option-input radio" name="example" id="teacher-radio-input"  />
+                                            <!-- <input type="radio" class=" option-input radio" name="example" id="teacher-radio-input"  /> -->
                                         </div>
                                     </label>
                                 </div>
+                                <span class="reg-teacher-title">Teacher</span>
                             </div>
-                            <div class="reg-student" id="student-radio">
+
+                            <div class="reg-student" id="student-radio" style="width: 30%;">
                                 <div class="option-reg">
                                     <label for="student-radio-input" class="radio-label">
 
                                         <div class="  option-img-desc">
 
                                             <img class="student_module_img" src="./Assets/img/student-module.png" alt="student">
-                                            <span class="reg-student-title">Student</span>
+                                            
                                         </div>
                                         <div class="radio-status-display">
                                             <!-- <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"> -->
-                                            <input type="radio" class="  option-input radio" name="example" id="student-radio-input" />
+                                            <!--<input type="radio" class="  option-input radio" name="example" id="student-radio-input" /> -->
                                         </div>
                                 </div>
 
                                 </label>
+                                <span class="reg-student-title">Student</span>
                             </div>
- 
-
- 
- 
-
-
                         </div>
 
                         <div class="reg-name">
@@ -125,13 +122,13 @@
                                 <input type="text" name="fName" id="fName">
                             </div>
                             <div>
-                                <label for="lName">First Name</label>
+                                <label for="lName">Last Name</label>
                                 <input type="text" name="lName" id="lName">
                             </div>
                         </div>
 
                         <div class="reg-username">
-                            <label for="userName">Username</label>
+                            <label for="userName">Username <span style="padding-left: 35%; font-size: 10px;">150 characters or fewer. Letters, digits and @.+-_ only</span></label>
                             <input name="userName" id="userName" type="text">
                         </div>
 
@@ -141,7 +138,7 @@
                         </div>
 
                         <div class="reg-language">
-                            <label for="lang">Preferred Language</label>
+                            <label for="lang">Preferred Language   <i class="fa fa-question-circle" aria-hidden="true"></i></label>
                             <select name="lang" id="lang">
                                 <option value="">sample 1</option>
                                 <option value="">sample 2</option>
@@ -151,11 +148,11 @@
 
                         <div class="reg-password">
                             <div>
-                                <label for="pass">Password</label>
+                                <label for="pass">Password <i class="fa fa-question-circle" aria-hidden="true"></i></label>
                                 <input type="password" name="pass" id="pass">
                             </div>
                             <div>
-                                <label for="confirmPass">Re-enter Password</label>
+                                <label for="confirmPass">Re-enter Password <i class="fa fa-question-circle" aria-hidden="true"></i></label>
                                 <input type="password" name="confirmPass" id="confirmPass">
                             </div>
                         </div>
