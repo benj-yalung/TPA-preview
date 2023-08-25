@@ -25,6 +25,33 @@
 
   <!-- JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <style>
+
+    #spiral {
+      background-image: url(./Assets/img/spiral.png);
+      background-size:100%;
+    }
+
+    #triangle {
+      background-image: url(./Assets/img/triangle.png);
+      background-size:100%;
+
+    }
+
+    #triangle1 {
+      background-image: url(./Assets/img/triangle1.png);
+      background-size:100%;
+
+    }
+
+    #triangle2 {
+      background-image: url(./Assets/img/triangle2.png);
+      background-size:100%;
+
+    }
+
+  </style>
 </head>
 
 <body class="page-dashboard">
@@ -195,19 +222,14 @@
       </nav>
       <!-- ! Main -->
       <main class="main users chart-page" id="skip-target">
-        <div class="progress-container">
-          <div class="progress__card progress-items">
-            <div class="progress__col course-info">
+        <div class="progress-container" >
+          <div class="progress__card progress-items" id="triangle">
+            <div class="progress__col course-info" style="padding-right: 5%;">
               <a href="!#" class="course-title">Creative Writing</a>
               <p class="course-percentage">You are 78% complete!</p>
-              <p class="course-grade">Overall Grade: C+</p>
+              <!--<p class="course-grade">Overall Grade: C+</p>-->
             </div>
-            <div class="progress__col course-progress">
-              <div class="parent-chartjs">
-                <canvas id="myChartNew"></canvas>
-              </div>
-            </div>
-            <div class="progress__col col3">
+            <!--<div class="progress__col col3">
               <div class="completion-info">
                 <p class="incomplete-number">8</p>
                 <p>Incomplete Assignments</p>
@@ -217,18 +239,26 @@
                 class="feather feather-chevron-right">
                 <polyline points="9 18 15 12 9 6"></polyline>
               </svg>
+            </div>-->
+            <div class="progress__col course-progress" style="margin-left: 20%;">
+              <div class="parent-chartjs">
+                <canvas id="myChartNew"></canvas>
+              </div>
             </div>
           </div>
+        
         </div>
         <div class="enrolled-course-container">
           <div class="enrolled-course-row">
             <h2 class="main-title">Enrolled Course</h2>
             <div class="tutor">
-              <div class="tutor-item">
+
+              <div class="tutor-item" id="triangle1">
                 <img src="./Assets/img/profile.png" alt="Subject profile" class="subject-profile">
                 <div class="subject-text">
                   <h3>English Orientation</h3><br>
-                  <p>Start date: <span>10/02/23</span></p>
+                  <p>Start date: <span>10/02/23</span></p> <br />
+                  <p>Class Attended: <span>1</span></p>
                 </div>
                 <div class="completed-assignment">
                   <h3 class="completed-container">4</h3>
@@ -242,11 +272,13 @@
                   <a href="#"><span id="next" class="material-symbols-rounded">chevron_right</span></a>
                 </div>
               </div>
-              <div class="tutor-item">
+
+              <div class="tutor-item" id="triangle1">
                 <img src="./Assets/img/profile.png" alt="Subject profile" class="subject-profile">
                 <div class="subject-text">
                   <h3>English Orientation</h3><br>
-                  <p>Start date: <span>10/02/23</span></p>
+                  <p>Start date: <span>10/02/23</span></p> <br />
+                  <p>Class Attended: <span>1</span></p>
                 </div>
                 <div class="completed-assignment">
                   <h3 class="completed-container">4</h3>
@@ -260,11 +292,12 @@
                   <a href="#"><span id="next" class="material-symbols-rounded">chevron_right</span></a>
                 </div>
               </div>
-              <div class="tutor-item">
+              <div class="tutor-item" id="triangle1">
                 <img src="./Assets/img/profile.png" alt="Subject profile" class="subject-profile">
                 <div class="subject-text">
                   <h3>English Orientation</h3><br>
-                  <p>Start date: <span>10/02/23</span></p>
+                  <p>Start date: <span>10/02/23</span></p> <br />
+                  <p>Class Attended: <span>1</span></p>
                 </div>
                 <div class="completed-assignment">
                   <h3 class="completed-container">4</h3>
@@ -279,10 +312,10 @@
                 </div>
               </div>
             </div>
-            <div class="tutor-ad tutor__ad--items">
+            <div class="tutor-ad tutor__ad--items"  id="triangle2">
               <a href="#"><span class="material-symbols-outlined"> add_circle </span></a>
               <h2>Find more courses to excel your future</h2>
-              <button type="button" class="btn btn-primary enroll-now-btn">ENROLL NOW</button>
+              <button type="button" class="btn btn-primary enroll-now-btn" style="background-color: rgb(54, 5, 100);">ENROLL NOW</button>
             </div>
           </div>
         </div>
@@ -306,7 +339,7 @@
 </footer> -->
     </div>
     <aside class="infobar">
-      <div class="infobar-start">
+      <div class="infobar-start" id="spiral">
         <div class="infobar-head">
           <div class="info-head__profile">
             <img src="./Assets/img/profile.png" alt="User profile">
@@ -328,7 +361,7 @@
       </div>
 
       <div class="infobar-mid">
-        <div class="wrapper infobar-mid__wrapper">
+        <div class="wrapper infobar-mid__wrapper" id="triangle">
           <header>
             <p class="current-date"></p>
             <div class="icons">
@@ -359,7 +392,7 @@
           <div class="schedule-item schedule-item-1">
             <div class="sched-subject">
               <div class="sched-date">
-                <span>04<span>Mar</span></span>
+                <span>04<span><br />Mar</span></span>
               </div>
               <div class="sched-subject-time">
                 <h3>English</h3>
@@ -368,8 +401,38 @@
             </div>
             <a href="#"><span id="next" class="material-symbols-rounded">chevron_right</span></a>
           </div>
+
+          <div class="schedule-item schedule-item-1">
+            <div class="sched-subject">
+              <div class="sched-date">
+                <span><span>05</span><span><br />Mar</span></span>
+              </div>
+              <div class="sched-subject-time">
+                <h3>History</h3>
+                <span>10:00 AM</span>
+              </div>
+            </div>
+            <a href="#"><span id="next" class="material-symbols-rounded">chevron_right</span></a>
+          </div>
+
+          <div class="schedule-item schedule-item-1">
+            <div class="sched-subject">
+              <div class="sched-date">
+                <span>07<span><br />Mar</span></span>
+              </div>
+              <div class="sched-subject-time">
+                <h3>History</h3>
+                <span>10:00 AM</span>
+              </div>
+            </div>
+            <a href="#"><span id="next" class="material-symbols-rounded">chevron_right</span></a>
+          </div>
         </div>
+
+        
       </div>
+
+     
     </aside>
   </div>
 
